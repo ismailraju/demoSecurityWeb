@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <property name="LOG_PATH" value="./logs"/>
+
+    <appender name="INFO-LOG" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_PATH}/info.log</file>
+
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_PATH}/archived-info/info.log.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <!-- each archived file, size max 10MB -->
+            <maxFileSize>10MB</maxFileSize>
+            <!-- total size of all archive files, if total size > 1GB,
+            it will delete old archived file -->
+            <totalSizeCap>1GB</totalSizeCap>
+            <!-- 60 days to keep -->
+            <maxHistory>60</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{dd-MM-yyyy HH:mm:ss.SSS}  %magenta([%thread]) %yellow(%class{0}:%line) - %msg%throwable%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{dd-MM-yyyy HH:mm:ss.SSS}  %magenta([%thread]) %yellow(%class{0}:%line) - %msg%throwable%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="DEBUG-LOG" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_PATH}/debug.log</file>
+
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_PATH}/archived-debug/debug.log.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <!-- each archived file, size max 10MB -->
+            <maxFileSize>1GB</maxFileSize>
+            <!-- total size of all archive files, if total size > 1GB,
+            it will delete old archived file -->
+<!--            <totalSizeCap>1GB</totalSizeCap>-->
+            <!-- 60 days to keep -->
+            <maxHistory>60</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{dd-MM-yyyy HH:mm:ss.SSS}  %magenta([%thread]) %yellow(%class{0}:%line) - %msg%throwable%n</pattern>
+        </encoder>
+    </appender>
+
+
+    <root level="INFO">
+        <appender-ref ref="INFO-LOG" />
+        <appender-ref ref="STDOUT" />
+    </root>
+    <logger name="com.ims" level="DEBUG" additivity="true">
+        <appender-ref ref="DEBUG-LOG"/>
+        <appender-ref ref="STDOUT" />
+    </logger>
+
+
+
+</configuration>
