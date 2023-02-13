@@ -9,4 +9,14 @@ class LoginController {
     String login() {
         return "login";
     }
+
+    @GetMapping("/hello")
+    String hello() {
+        return "hello";
+    }
+
+    @GetMapping(value = {"/", "/home"})
+    String home() {
+        return "home";
+    }
 }
