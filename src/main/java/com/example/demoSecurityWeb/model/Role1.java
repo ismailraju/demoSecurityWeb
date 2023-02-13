@@ -1,13 +1,11 @@
 package com.example.demoSecurityWeb.model;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotEmpty;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-import org.hibernate.annotations.NotFound;
-import org.hibernate.annotations.NotFoundAction;
-import org.springframework.data.annotation.Transient;
 
 import java.util.List;
 
@@ -26,7 +24,7 @@ public class Role1 {
     @Column(length = 50, name = "role")
     private String role;
 
-    @NotFound(action = NotFoundAction.IGNORE)
+//    @NotFound(action = NotFoundAction.IGNORE)
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
             name = "role1ToPermission1",

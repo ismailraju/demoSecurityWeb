@@ -1,0 +1,1088 @@
+13-02-2023 22:34:25.214  [35m[background-preinit][0;39m [33mVersion:21[0;39m - HV000001: Hibernate Validator 8.0.0.Final
+13-02-2023 22:34:25.373  [35m[restartedMain][0;39m [33mStartupInfoLogger:51[0;39m - Starting DemoSecurityWebApplication using Java 17.0.6 with PID 8776 (C:\Users\Asus\Downloads\demoSecurityWeb\target\classes started by Asus in C:\Users\Asus\Downloads\demoSecurityWeb)
+13-02-2023 22:34:25.375  [35m[restartedMain][0;39m [33mSpringApplication:636[0;39m - The following 1 profile is active: "dev"
+13-02-2023 22:34:25.537  [35m[restartedMain][0;39m [33mDeferredLog:250[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+13-02-2023 22:34:25.538  [35m[restartedMain][0;39m [33mDeferredLog:250[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+13-02-2023 22:34:28.652  [35m[restartedMain][0;39m [33mRepositoryConfigurationDelegate:138[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13-02-2023 22:34:28.960  [35m[restartedMain][0;39m [33mRepositoryConfigurationDelegate:208[0;39m - Finished Spring Data repository scanning in 278 ms. Found 1 JPA repository interfaces.
+13-02-2023 22:34:30.945  [35m[restartedMain][0;39m [33mTomcatWebServer:108[0;39m - Tomcat initialized with port(s): 8080 (http)
+13-02-2023 22:34:30.996  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Initializing ProtocolHandler ["http-nio-8080"]
+13-02-2023 22:34:31.005  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Starting service [Tomcat]
+13-02-2023 22:34:31.006  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.5]
+13-02-2023 22:34:31.294  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Initializing Spring embedded WebApplicationContext
+13-02-2023 22:34:31.295  [35m[restartedMain][0;39m [33mServletWebServerApplicationContext:291[0;39m - Root WebApplicationContext: initialization completed in 5756 ms
+13-02-2023 22:34:31.742  [35m[restartedMain][0;39m [33mHikariDataSource:110[0;39m - HikariPool-1 - Starting...
+13-02-2023 22:34:32.061  [35m[restartedMain][0;39m [33mHikariPool:565[0;39m - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@14def6e6
+13-02-2023 22:34:32.066  [35m[restartedMain][0;39m [33mHikariDataSource:123[0;39m - HikariPool-1 - Start completed.
+13-02-2023 22:34:32.192  [35m[restartedMain][0;39m [33mLogHelper:31[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+13-02-2023 22:34:32.324  [35m[restartedMain][0;39m [33mVersion:44[0;39m - HHH000412: Hibernate ORM core version 6.1.6.Final
+13-02-2023 22:34:32.678  [35m[restartedMain][0;39m [33mMetadataBuilderImpl$MetadataBuildingOptionsImpl:626[0;39m - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+13-02-2023 22:34:32.943  [35m[restartedMain][0;39m [33mDialectFactoryImpl:66[0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+13-02-2023 22:34:32.949  [35m[restartedMain][0;39m [33mDialectFactoryImpl:73[0;39m - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+13-02-2023 22:34:33.259  [35m[restartedMain][0;39m [33mAbstractEntityManagerFactoryBean:426[0;39m - Failed to initialize JPA EntityManagerFactory: Entity 'com.example.demoSecurityWeb.model.User1' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+13-02-2023 22:34:33.260  [35m[restartedMain][0;39m [33mAbstractApplicationContext:592[0;39m - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.example.demoSecurityWeb.model.User1' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+13-02-2023 22:34:33.262  [35m[restartedMain][0;39m [33mHikariDataSource:350[0;39m - HikariPool-1 - Shutdown initiated...
+13-02-2023 22:34:33.279  [35m[restartedMain][0;39m [33mHikariDataSource:352[0;39m - HikariPool-1 - Shutdown completed.
+13-02-2023 22:34:33.284  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Stopping service [Tomcat]
+13-02-2023 22:34:33.319  [35m[restartedMain][0;39m [33mConditionEvaluationReportLogger:82[0;39m - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+13-02-2023 22:34:33.359  [35m[restartedMain][0;39m [33mSpringApplication:820[0;39m - Application run failedorg.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.example.demoSecurityWeb.model.User1' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1751)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:905)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.example.demoSecurityWeb.DemoSecurityWebApplication.main(DemoSecurityWebApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.hibernate.AnnotationException: Entity 'com.example.demoSecurityWeb.model.User1' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:266)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:210)
+	at org.hibernate.cfg.annotations.EntityBinder.bindEntityClass(EntityBinder.java:260)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:556)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:216)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:247)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:290)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1350)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1421)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1797)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1747)
+	... 21 common frames omitted
+
+13-02-2023 22:35:07.383  [35m[background-preinit][0;39m [33mVersion:21[0;39m - HV000001: Hibernate Validator 8.0.0.Final
+13-02-2023 22:35:07.499  [35m[restartedMain][0;39m [33mStartupInfoLogger:51[0;39m - Starting DemoSecurityWebApplication using Java 17.0.6 with PID 10816 (C:\Users\Asus\Downloads\demoSecurityWeb\target\classes started by Asus in C:\Users\Asus\Downloads\demoSecurityWeb)
+13-02-2023 22:35:07.502  [35m[restartedMain][0;39m [33mSpringApplication:636[0;39m - The following 1 profile is active: "dev"
+13-02-2023 22:35:07.637  [35m[restartedMain][0;39m [33mDeferredLog:250[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+13-02-2023 22:35:07.637  [35m[restartedMain][0;39m [33mDeferredLog:250[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+13-02-2023 22:35:09.447  [35m[restartedMain][0;39m [33mRepositoryConfigurationDelegate:138[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13-02-2023 22:35:09.550  [35m[restartedMain][0;39m [33mRepositoryConfigurationDelegate:208[0;39m - Finished Spring Data repository scanning in 87 ms. Found 1 JPA repository interfaces.
+13-02-2023 22:35:10.618  [35m[restartedMain][0;39m [33mTomcatWebServer:108[0;39m - Tomcat initialized with port(s): 8080 (http)
+13-02-2023 22:35:10.632  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Initializing ProtocolHandler ["http-nio-8080"]
+13-02-2023 22:35:10.634  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Starting service [Tomcat]
+13-02-2023 22:35:10.635  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.5]
+13-02-2023 22:35:10.750  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Initializing Spring embedded WebApplicationContext
+13-02-2023 22:35:10.751  [35m[restartedMain][0;39m [33mServletWebServerApplicationContext:291[0;39m - Root WebApplicationContext: initialization completed in 3112 ms
+13-02-2023 22:35:11.125  [35m[restartedMain][0;39m [33mHikariDataSource:110[0;39m - HikariPool-1 - Starting...
+13-02-2023 22:35:11.427  [35m[restartedMain][0;39m [33mHikariPool:565[0;39m - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5b5a7f8
+13-02-2023 22:35:11.431  [35m[restartedMain][0;39m [33mHikariDataSource:123[0;39m - HikariPool-1 - Start completed.
+13-02-2023 22:35:11.560  [35m[restartedMain][0;39m [33mLogHelper:31[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+13-02-2023 22:35:11.671  [35m[restartedMain][0;39m [33mVersion:44[0;39m - HHH000412: Hibernate ORM core version 6.1.6.Final
+13-02-2023 22:35:11.982  [35m[restartedMain][0;39m [33mMetadataBuilderImpl$MetadataBuildingOptionsImpl:626[0;39m - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+13-02-2023 22:35:12.227  [35m[restartedMain][0;39m [33mDialectFactoryImpl:66[0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+13-02-2023 22:35:12.228  [35m[restartedMain][0;39m [33mDialectFactoryImpl:73[0;39m - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+13-02-2023 22:35:12.556  [35m[restartedMain][0;39m [33mAbstractEntityManagerFactoryBean:426[0;39m - Failed to initialize JPA EntityManagerFactory: Entity 'com.example.demoSecurityWeb.model.User1' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+13-02-2023 22:35:12.558  [35m[restartedMain][0;39m [33mAbstractApplicationContext:592[0;39m - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.example.demoSecurityWeb.model.User1' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+13-02-2023 22:35:12.560  [35m[restartedMain][0;39m [33mHikariDataSource:350[0;39m - HikariPool-1 - Shutdown initiated...
+13-02-2023 22:35:12.574  [35m[restartedMain][0;39m [33mHikariDataSource:352[0;39m - HikariPool-1 - Shutdown completed.
+13-02-2023 22:35:12.578  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Stopping service [Tomcat]
+13-02-2023 22:35:12.612  [35m[restartedMain][0;39m [33mConditionEvaluationReportLogger:82[0;39m - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+13-02-2023 22:35:12.653  [35m[restartedMain][0;39m [33mSpringApplication:820[0;39m - Application run failedorg.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.example.demoSecurityWeb.model.User1' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1751)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:905)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.example.demoSecurityWeb.DemoSecurityWebApplication.main(DemoSecurityWebApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.hibernate.AnnotationException: Entity 'com.example.demoSecurityWeb.model.User1' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:266)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:210)
+	at org.hibernate.cfg.annotations.EntityBinder.bindEntityClass(EntityBinder.java:260)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:556)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:216)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:247)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:290)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1350)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1421)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1797)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1747)
+	... 21 common frames omitted
+
+13-02-2023 23:13:25.557  [35m[background-preinit][0;39m [33mVersion:21[0;39m - HV000001: Hibernate Validator 8.0.0.Final
+13-02-2023 23:13:25.668  [35m[restartedMain][0;39m [33mStartupInfoLogger:51[0;39m - Starting DemoSecurityWebApplication using Java 17.0.6 with PID 10888 (C:\Users\Asus\Downloads\demoSecurityWeb\target\classes started by Asus in C:\Users\Asus\Downloads\demoSecurityWeb)
+13-02-2023 23:13:25.671  [35m[restartedMain][0;39m [33mSpringApplication:636[0;39m - The following 1 profile is active: "dev"
+13-02-2023 23:13:25.886  [35m[restartedMain][0;39m [33mDeferredLog:250[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+13-02-2023 23:13:25.886  [35m[restartedMain][0;39m [33mDeferredLog:250[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+13-02-2023 23:13:29.528  [35m[restartedMain][0;39m [33mRepositoryConfigurationDelegate:138[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13-02-2023 23:13:29.643  [35m[restartedMain][0;39m [33mRepositoryConfigurationDelegate:208[0;39m - Finished Spring Data repository scanning in 99 ms. Found 1 JPA repository interfaces.
+13-02-2023 23:13:34.196  [35m[restartedMain][0;39m [33mTomcatWebServer:108[0;39m - Tomcat initialized with port(s): 8080 (http)
+13-02-2023 23:13:34.341  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Initializing ProtocolHandler ["http-nio-8080"]
+13-02-2023 23:13:34.346  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Starting service [Tomcat]
+13-02-2023 23:13:34.348  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.4]
+13-02-2023 23:13:34.727  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Initializing Spring embedded WebApplicationContext
+13-02-2023 23:13:34.729  [35m[restartedMain][0;39m [33mServletWebServerApplicationContext:291[0;39m - Root WebApplicationContext: initialization completed in 8839 ms
+13-02-2023 23:13:36.459  [35m[restartedMain][0;39m [33mHikariDataSource:110[0;39m - HikariPool-1 - Starting...
+13-02-2023 23:13:37.029  [35m[restartedMain][0;39m [33mHikariPool:565[0;39m - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1c85a907
+13-02-2023 23:13:37.035  [35m[restartedMain][0;39m [33mHikariDataSource:123[0;39m - HikariPool-1 - Start completed.
+13-02-2023 23:13:37.341  [35m[restartedMain][0;39m [33mLogHelper:31[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+13-02-2023 23:13:37.710  [35m[restartedMain][0;39m [33mVersion:44[0;39m - HHH000412: Hibernate ORM core version 6.1.6.Final
+13-02-2023 23:13:42.260  [35m[restartedMain][0;39m [33mMetadataBuilderImpl$MetadataBuildingOptionsImpl:626[0;39m - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+13-02-2023 23:13:42.698  [35m[restartedMain][0;39m [33mDialectFactoryImpl:66[0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+13-02-2023 23:13:42.699  [35m[restartedMain][0;39m [33mDialectFactoryImpl:73[0;39m - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+13-02-2023 23:13:43.167  [35m[restartedMain][0;39m [33mAbstractEntityManagerFactoryBean:426[0;39m - Failed to initialize JPA EntityManagerFactory: Entity 'com.example.demoSecurityWeb.model.User1' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+13-02-2023 23:13:43.169  [35m[restartedMain][0;39m [33mAbstractApplicationContext:592[0;39m - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.example.demoSecurityWeb.model.User1' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+13-02-2023 23:13:43.172  [35m[restartedMain][0;39m [33mHikariDataSource:350[0;39m - HikariPool-1 - Shutdown initiated...
+13-02-2023 23:13:43.189  [35m[restartedMain][0;39m [33mHikariDataSource:352[0;39m - HikariPool-1 - Shutdown completed.
+13-02-2023 23:13:43.193  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Stopping service [Tomcat]
+13-02-2023 23:13:43.232  [35m[restartedMain][0;39m [33mConditionEvaluationReportLogger:82[0;39m - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+13-02-2023 23:13:43.277  [35m[restartedMain][0;39m [33mSpringApplication:820[0;39m - Application run failedorg.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.example.demoSecurityWeb.model.User1' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1751)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:905)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.example.demoSecurityWeb.DemoSecurityWebApplication.main(DemoSecurityWebApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.hibernate.AnnotationException: Entity 'com.example.demoSecurityWeb.model.User1' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:266)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:210)
+	at org.hibernate.cfg.annotations.EntityBinder.bindEntityClass(EntityBinder.java:260)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:556)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:216)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:247)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:290)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1350)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1421)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1797)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1747)
+	... 21 common frames omitted
+
+13-02-2023 23:14:50.925  [35m[background-preinit][0;39m [33mVersion:21[0;39m - HV000001: Hibernate Validator 8.0.0.Final
+13-02-2023 23:14:51.024  [35m[restartedMain][0;39m [33mStartupInfoLogger:51[0;39m - Starting DemoSecurityWebApplication using Java 17.0.6 with PID 5324 (C:\Users\Asus\Downloads\demoSecurityWeb\target\classes started by Asus in C:\Users\Asus\Downloads\demoSecurityWeb)
+13-02-2023 23:14:51.026  [35m[restartedMain][0;39m [33mSpringApplication:636[0;39m - The following 1 profile is active: "dev"
+13-02-2023 23:14:51.176  [35m[restartedMain][0;39m [33mDeferredLog:250[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+13-02-2023 23:14:51.178  [35m[restartedMain][0;39m [33mDeferredLog:250[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+13-02-2023 23:14:54.769  [35m[restartedMain][0;39m [33mRepositoryConfigurationDelegate:138[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13-02-2023 23:14:54.948  [35m[restartedMain][0;39m [33mRepositoryConfigurationDelegate:208[0;39m - Finished Spring Data repository scanning in 152 ms. Found 1 JPA repository interfaces.
+13-02-2023 23:14:56.825  [35m[restartedMain][0;39m [33mTomcatWebServer:108[0;39m - Tomcat initialized with port(s): 8080 (http)
+13-02-2023 23:14:56.850  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Initializing ProtocolHandler ["http-nio-8080"]
+13-02-2023 23:14:56.853  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Starting service [Tomcat]
+13-02-2023 23:14:56.854  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.4]
+13-02-2023 23:14:57.041  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Initializing Spring embedded WebApplicationContext
+13-02-2023 23:14:57.042  [35m[restartedMain][0;39m [33mServletWebServerApplicationContext:291[0;39m - Root WebApplicationContext: initialization completed in 5862 ms
+13-02-2023 23:14:57.562  [35m[restartedMain][0;39m [33mHikariDataSource:110[0;39m - HikariPool-1 - Starting...
+13-02-2023 23:14:58.001  [35m[restartedMain][0;39m [33mHikariPool:565[0;39m - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5d31f021
+13-02-2023 23:14:58.006  [35m[restartedMain][0;39m [33mHikariDataSource:123[0;39m - HikariPool-1 - Start completed.
+13-02-2023 23:14:58.197  [35m[restartedMain][0;39m [33mLogHelper:31[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+13-02-2023 23:14:58.381  [35m[restartedMain][0;39m [33mVersion:44[0;39m - HHH000412: Hibernate ORM core version 6.1.6.Final
+13-02-2023 23:14:58.786  [35m[restartedMain][0;39m [33mMetadataBuilderImpl$MetadataBuildingOptionsImpl:626[0;39m - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+13-02-2023 23:14:59.111  [35m[restartedMain][0;39m [33mDialectFactoryImpl:66[0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+13-02-2023 23:14:59.113  [35m[restartedMain][0;39m [33mDialectFactoryImpl:73[0;39m - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+13-02-2023 23:14:59.541  [35m[restartedMain][0;39m [33mAbstractEntityManagerFactoryBean:426[0;39m - Failed to initialize JPA EntityManagerFactory: Entity 'com.example.demoSecurityWeb.model.User1' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+13-02-2023 23:14:59.542  [35m[restartedMain][0;39m [33mAbstractApplicationContext:592[0;39m - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.example.demoSecurityWeb.model.User1' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+13-02-2023 23:14:59.546  [35m[restartedMain][0;39m [33mHikariDataSource:350[0;39m - HikariPool-1 - Shutdown initiated...
+13-02-2023 23:14:59.564  [35m[restartedMain][0;39m [33mHikariDataSource:352[0;39m - HikariPool-1 - Shutdown completed.
+13-02-2023 23:14:59.571  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Stopping service [Tomcat]
+13-02-2023 23:14:59.616  [35m[restartedMain][0;39m [33mConditionEvaluationReportLogger:82[0;39m - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+13-02-2023 23:14:59.677  [35m[restartedMain][0;39m [33mSpringApplication:820[0;39m - Application run failedorg.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.example.demoSecurityWeb.model.User1' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1751)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:905)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.example.demoSecurityWeb.DemoSecurityWebApplication.main(DemoSecurityWebApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.hibernate.AnnotationException: Entity 'com.example.demoSecurityWeb.model.User1' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:266)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:210)
+	at org.hibernate.cfg.annotations.EntityBinder.bindEntityClass(EntityBinder.java:260)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:556)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:216)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:247)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:290)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1350)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1421)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1797)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1747)
+	... 21 common frames omitted
+
+13-02-2023 23:18:53.766  [35m[background-preinit][0;39m [33mVersion:21[0;39m - HV000001: Hibernate Validator 8.0.0.Final
+13-02-2023 23:18:53.862  [35m[restartedMain][0;39m [33mStartupInfoLogger:51[0;39m - Starting DemoSecurityWebApplication using Java 17.0.6 with PID 7892 (C:\Users\Asus\Downloads\demoSecurityWeb\target\classes started by Asus in C:\Users\Asus\Downloads\demoSecurityWeb)
+13-02-2023 23:18:53.864  [35m[restartedMain][0;39m [33mSpringApplication:636[0;39m - The following 1 profile is active: "dev"
+13-02-2023 23:18:53.982  [35m[restartedMain][0;39m [33mDeferredLog:250[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+13-02-2023 23:18:53.983  [35m[restartedMain][0;39m [33mDeferredLog:250[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+13-02-2023 23:18:55.414  [35m[restartedMain][0;39m [33mRepositoryConfigurationDelegate:138[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13-02-2023 23:18:55.532  [35m[restartedMain][0;39m [33mRepositoryConfigurationDelegate:208[0;39m - Finished Spring Data repository scanning in 98 ms. Found 1 JPA repository interfaces.
+13-02-2023 23:18:56.424  [35m[restartedMain][0;39m [33mTomcatWebServer:108[0;39m - Tomcat initialized with port(s): 8080 (http)
+13-02-2023 23:18:56.439  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Initializing ProtocolHandler ["http-nio-8080"]
+13-02-2023 23:18:56.440  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Starting service [Tomcat]
+13-02-2023 23:18:56.440  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.4]
+13-02-2023 23:18:56.557  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Initializing Spring embedded WebApplicationContext
+13-02-2023 23:18:56.558  [35m[restartedMain][0;39m [33mServletWebServerApplicationContext:291[0;39m - Root WebApplicationContext: initialization completed in 2574 ms
+13-02-2023 23:18:56.695  [35m[restartedMain][0;39m [33mHikariDataSource:110[0;39m - HikariPool-1 - Starting...
+13-02-2023 23:18:56.915  [35m[restartedMain][0;39m [33mHikariPool:565[0;39m - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a498b02
+13-02-2023 23:18:56.918  [35m[restartedMain][0;39m [33mHikariDataSource:123[0;39m - HikariPool-1 - Start completed.
+13-02-2023 23:18:57.052  [35m[restartedMain][0;39m [33mLogHelper:31[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+13-02-2023 23:18:57.180  [35m[restartedMain][0;39m [33mVersion:44[0;39m - HHH000412: Hibernate ORM core version 6.1.6.Final
+13-02-2023 23:18:57.458  [35m[restartedMain][0;39m [33mMetadataBuilderImpl$MetadataBuildingOptionsImpl:626[0;39m - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+13-02-2023 23:18:57.666  [35m[restartedMain][0;39m [33mDialectFactoryImpl:66[0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+13-02-2023 23:18:57.667  [35m[restartedMain][0;39m [33mDialectFactoryImpl:73[0;39m - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+13-02-2023 23:18:57.937  [35m[restartedMain][0;39m [33mAbstractEntityManagerFactoryBean:426[0;39m - Failed to initialize JPA EntityManagerFactory: Entity 'com.example.demoSecurityWeb.model.User1' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+13-02-2023 23:18:57.938  [35m[restartedMain][0;39m [33mAbstractApplicationContext:592[0;39m - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.example.demoSecurityWeb.model.User1' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+13-02-2023 23:18:57.940  [35m[restartedMain][0;39m [33mHikariDataSource:350[0;39m - HikariPool-1 - Shutdown initiated...
+13-02-2023 23:18:57.953  [35m[restartedMain][0;39m [33mHikariDataSource:352[0;39m - HikariPool-1 - Shutdown completed.
+13-02-2023 23:18:57.956  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Stopping service [Tomcat]
+13-02-2023 23:18:57.975  [35m[restartedMain][0;39m [33mConditionEvaluationReportLogger:82[0;39m - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+13-02-2023 23:18:58.004  [35m[restartedMain][0;39m [33mSpringApplication:820[0;39m - Application run failedorg.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.example.demoSecurityWeb.model.User1' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1751)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:905)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.example.demoSecurityWeb.DemoSecurityWebApplication.main(DemoSecurityWebApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.hibernate.AnnotationException: Entity 'com.example.demoSecurityWeb.model.User1' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:266)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:210)
+	at org.hibernate.cfg.annotations.EntityBinder.bindEntityClass(EntityBinder.java:260)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:556)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:216)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:247)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:290)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1350)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1421)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1797)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1747)
+	... 21 common frames omitted
+
+13-02-2023 23:20:13.608  [35m[background-preinit][0;39m [33mVersion:21[0;39m - HV000001: Hibernate Validator 8.0.0.Final
+13-02-2023 23:20:13.718  [35m[restartedMain][0;39m [33mStartupInfoLogger:51[0;39m - Starting DemoSecurityWebApplication using Java 17.0.6 with PID 8792 (C:\Users\Asus\Downloads\demoSecurityWeb\target\classes started by Asus in C:\Users\Asus\Downloads\demoSecurityWeb)
+13-02-2023 23:20:13.720  [35m[restartedMain][0;39m [33mSpringApplication:636[0;39m - The following 1 profile is active: "dev"
+13-02-2023 23:20:13.850  [35m[restartedMain][0;39m [33mDeferredLog:250[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+13-02-2023 23:20:13.851  [35m[restartedMain][0;39m [33mDeferredLog:250[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+13-02-2023 23:20:15.277  [35m[restartedMain][0;39m [33mRepositoryConfigurationDelegate:138[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13-02-2023 23:20:15.390  [35m[restartedMain][0;39m [33mRepositoryConfigurationDelegate:208[0;39m - Finished Spring Data repository scanning in 95 ms. Found 1 JPA repository interfaces.
+13-02-2023 23:20:16.621  [35m[restartedMain][0;39m [33mTomcatWebServer:108[0;39m - Tomcat initialized with port(s): 8080 (http)
+13-02-2023 23:20:16.639  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Initializing ProtocolHandler ["http-nio-8080"]
+13-02-2023 23:20:16.640  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Starting service [Tomcat]
+13-02-2023 23:20:16.641  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.4]
+13-02-2023 23:20:16.756  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Initializing Spring embedded WebApplicationContext
+13-02-2023 23:20:16.757  [35m[restartedMain][0;39m [33mServletWebServerApplicationContext:291[0;39m - Root WebApplicationContext: initialization completed in 2904 ms
+13-02-2023 23:20:17.029  [35m[restartedMain][0;39m [33mLogHelper:31[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+13-02-2023 23:20:17.113  [35m[restartedMain][0;39m [33mVersion:44[0;39m - HHH000412: Hibernate ORM core version 6.1.6.Final
+13-02-2023 23:20:17.429  [35m[restartedMain][0;39m [33mMetadataBuilderImpl$MetadataBuildingOptionsImpl:626[0;39m - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+13-02-2023 23:20:17.787  [35m[restartedMain][0;39m [33mHikariDataSource:110[0;39m - HikariPool-1 - Starting...
+13-02-2023 23:20:18.816  [35m[restartedMain][0;39m [33mHikariPool:565[0;39m - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5713866
+13-02-2023 23:20:18.828  [35m[restartedMain][0;39m [33mHikariDataSource:123[0;39m - HikariPool-1 - Start completed.
+13-02-2023 23:20:19.433  [35m[restartedMain][0;39m [33mDialectFactoryImpl:66[0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+13-02-2023 23:20:19.440  [35m[restartedMain][0;39m [33mDialectFactoryImpl:73[0;39m - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+13-02-2023 23:20:21.503  [35m[restartedMain][0;39m [33mAbstractEntityManagerFactoryBean:426[0;39m - Failed to initialize JPA EntityManagerFactory: Entity 'com.example.demoSecurityWeb.model.User1' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+13-02-2023 23:20:21.507  [35m[restartedMain][0;39m [33mAbstractApplicationContext:592[0;39m - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.example.demoSecurityWeb.model.User1' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+13-02-2023 23:20:21.520  [35m[restartedMain][0;39m [33mHikariDataSource:350[0;39m - HikariPool-1 - Shutdown initiated...
+13-02-2023 23:20:21.585  [35m[restartedMain][0;39m [33mHikariDataSource:352[0;39m - HikariPool-1 - Shutdown completed.
+13-02-2023 23:20:21.594  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Stopping service [Tomcat]
+13-02-2023 23:20:21.636  [35m[restartedMain][0;39m [33mConditionEvaluationReportLogger:82[0;39m - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+13-02-2023 23:20:21.729  [35m[restartedMain][0;39m [33mSpringApplication:820[0;39m - Application run failedorg.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.example.demoSecurityWeb.model.User1' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1751)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:905)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.example.demoSecurityWeb.DemoSecurityWebApplication.main(DemoSecurityWebApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.hibernate.AnnotationException: Entity 'com.example.demoSecurityWeb.model.User1' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:266)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:210)
+	at org.hibernate.cfg.annotations.EntityBinder.bindEntityClass(EntityBinder.java:260)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:556)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:216)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:247)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:290)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1350)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1421)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1797)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1747)
+	... 21 common frames omitted
+
+13-02-2023 23:20:49.591  [35m[background-preinit][0;39m [33mVersion:21[0;39m - HV000001: Hibernate Validator 8.0.0.Final
+13-02-2023 23:20:49.754  [35m[restartedMain][0;39m [33mStartupInfoLogger:51[0;39m - Starting DemoSecurityWebApplication using Java 17.0.6 with PID 10572 (C:\Users\Asus\Downloads\demoSecurityWeb\target\classes started by Asus in C:\Users\Asus\Downloads\demoSecurityWeb)
+13-02-2023 23:20:49.759  [35m[restartedMain][0;39m [33mSpringApplication:636[0;39m - The following 1 profile is active: "dev"
+13-02-2023 23:20:49.900  [35m[restartedMain][0;39m [33mDeferredLog:250[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+13-02-2023 23:20:49.901  [35m[restartedMain][0;39m [33mDeferredLog:250[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+13-02-2023 23:20:51.793  [35m[restartedMain][0;39m [33mRepositoryConfigurationDelegate:138[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13-02-2023 23:20:51.946  [35m[restartedMain][0;39m [33mRepositoryConfigurationDelegate:208[0;39m - Finished Spring Data repository scanning in 131 ms. Found 1 JPA repository interfaces.
+13-02-2023 23:20:53.353  [35m[restartedMain][0;39m [33mTomcatWebServer:108[0;39m - Tomcat initialized with port(s): 8080 (http)
+13-02-2023 23:20:53.369  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Initializing ProtocolHandler ["http-nio-8080"]
+13-02-2023 23:20:53.370  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Starting service [Tomcat]
+13-02-2023 23:20:53.371  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.4]
+13-02-2023 23:20:53.483  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Initializing Spring embedded WebApplicationContext
+13-02-2023 23:20:53.484  [35m[restartedMain][0;39m [33mServletWebServerApplicationContext:291[0;39m - Root WebApplicationContext: initialization completed in 3581 ms
+13-02-2023 23:20:53.850  [35m[restartedMain][0;39m [33mLogHelper:31[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+13-02-2023 23:20:53.936  [35m[restartedMain][0;39m [33mVersion:44[0;39m - HHH000412: Hibernate ORM core version 6.1.6.Final
+13-02-2023 23:20:54.260  [35m[restartedMain][0;39m [33mMetadataBuilderImpl$MetadataBuildingOptionsImpl:626[0;39m - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+13-02-2023 23:20:54.467  [35m[restartedMain][0;39m [33mHikariDataSource:110[0;39m - HikariPool-1 - Starting...
+13-02-2023 23:20:54.735  [35m[restartedMain][0;39m [33mHikariPool:565[0;39m - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2e9aaa08
+13-02-2023 23:20:54.739  [35m[restartedMain][0;39m [33mHikariDataSource:123[0;39m - HikariPool-1 - Start completed.
+13-02-2023 23:20:54.786  [35m[restartedMain][0;39m [33mDialectFactoryImpl:66[0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+13-02-2023 23:20:54.791  [35m[restartedMain][0;39m [33mDialectFactoryImpl:73[0;39m - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+13-02-2023 23:20:55.172  [35m[restartedMain][0;39m [33mAbstractEntityManagerFactoryBean:426[0;39m - Failed to initialize JPA EntityManagerFactory: Entity 'com.example.demoSecurityWeb.model.User1' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+13-02-2023 23:20:55.173  [35m[restartedMain][0;39m [33mAbstractApplicationContext:592[0;39m - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.example.demoSecurityWeb.model.User1' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+13-02-2023 23:20:55.176  [35m[restartedMain][0;39m [33mHikariDataSource:350[0;39m - HikariPool-1 - Shutdown initiated...
+13-02-2023 23:20:55.190  [35m[restartedMain][0;39m [33mHikariDataSource:352[0;39m - HikariPool-1 - Shutdown completed.
+13-02-2023 23:20:55.195  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Stopping service [Tomcat]
+13-02-2023 23:20:55.219  [35m[restartedMain][0;39m [33mConditionEvaluationReportLogger:82[0;39m - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+13-02-2023 23:20:55.257  [35m[restartedMain][0;39m [33mSpringApplication:820[0;39m - Application run failedorg.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.example.demoSecurityWeb.model.User1' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1751)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:905)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.example.demoSecurityWeb.DemoSecurityWebApplication.main(DemoSecurityWebApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.hibernate.AnnotationException: Entity 'com.example.demoSecurityWeb.model.User1' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:266)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:210)
+	at org.hibernate.cfg.annotations.EntityBinder.bindEntityClass(EntityBinder.java:260)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:556)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:216)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:247)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:290)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1350)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1421)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1797)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1747)
+	... 21 common frames omitted
+
+13-02-2023 23:21:48.574  [35m[background-preinit][0;39m [33mVersion:21[0;39m - HV000001: Hibernate Validator 8.0.0.Final
+13-02-2023 23:21:48.686  [35m[restartedMain][0;39m [33mStartupInfoLogger:51[0;39m - Starting DemoSecurityWebApplication using Java 17.0.6 with PID 13200 (C:\Users\Asus\Downloads\demoSecurityWeb\target\classes started by Asus in C:\Users\Asus\Downloads\demoSecurityWeb)
+13-02-2023 23:21:48.689  [35m[restartedMain][0;39m [33mSpringApplication:636[0;39m - The following 1 profile is active: "dev"
+13-02-2023 23:21:48.810  [35m[restartedMain][0;39m [33mDeferredLog:250[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+13-02-2023 23:21:48.811  [35m[restartedMain][0;39m [33mDeferredLog:250[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+13-02-2023 23:21:50.180  [35m[restartedMain][0;39m [33mRepositoryConfigurationDelegate:138[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13-02-2023 23:21:50.278  [35m[restartedMain][0;39m [33mRepositoryConfigurationDelegate:208[0;39m - Finished Spring Data repository scanning in 84 ms. Found 1 JPA repository interfaces.
+13-02-2023 23:21:51.379  [35m[restartedMain][0;39m [33mTomcatWebServer:108[0;39m - Tomcat initialized with port(s): 8080 (http)
+13-02-2023 23:21:51.394  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Initializing ProtocolHandler ["http-nio-8080"]
+13-02-2023 23:21:51.395  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Starting service [Tomcat]
+13-02-2023 23:21:51.396  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.4]
+13-02-2023 23:21:51.516  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Initializing Spring embedded WebApplicationContext
+13-02-2023 23:21:51.517  [35m[restartedMain][0;39m [33mServletWebServerApplicationContext:291[0;39m - Root WebApplicationContext: initialization completed in 2705 ms
+13-02-2023 23:21:51.775  [35m[restartedMain][0;39m [33mLogHelper:31[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+13-02-2023 23:21:51.859  [35m[restartedMain][0;39m [33mVersion:44[0;39m - HHH000412: Hibernate ORM core version 6.1.6.Final
+13-02-2023 23:21:52.169  [35m[restartedMain][0;39m [33mMetadataBuilderImpl$MetadataBuildingOptionsImpl:626[0;39m - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+13-02-2023 23:21:52.384  [35m[restartedMain][0;39m [33mHikariDataSource:110[0;39m - HikariPool-1 - Starting...
+13-02-2023 23:21:52.654  [35m[restartedMain][0;39m [33mHikariPool:565[0;39m - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@bc40d38
+13-02-2023 23:21:52.658  [35m[restartedMain][0;39m [33mHikariDataSource:123[0;39m - HikariPool-1 - Start completed.
+13-02-2023 23:21:52.690  [35m[restartedMain][0;39m [33mDialectFactoryImpl:66[0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+13-02-2023 23:21:52.691  [35m[restartedMain][0;39m [33mDialectFactoryImpl:73[0;39m - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+13-02-2023 23:21:55.017  [35m[restartedMain][0;39m [33mJtaPlatformInitiator:51[0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+13-02-2023 23:21:55.037  [35m[restartedMain][0;39m [33mAbstractEntityManagerFactoryBean:437[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+13-02-2023 23:21:55.201  [35m[restartedMain][0;39m [33mAbstractApplicationContext:592[0;39m - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through field 'httpSecurity': Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration.httpSecurity' defined in class path resource [org/springframework/security/config/annotation/web/configuration/HttpSecurityConfiguration.class]: Failed to instantiate [org.springframework.security.config.annotation.web.builders.HttpSecurity]: Factory method 'httpSecurity' threw exception with message: Error creating bean with name 'users' defined in class path resource [com/example/demoSecurityWeb/config/WebSecurityConfig.class]: Failed to instantiate [org.springframework.security.provisioning.UserDetailsManager]: Factory method 'users' threw exception with message: PreparedStatementCallback; SQL [insert into users (username, password, enabled) values (?,?,?)]; Duplicate entry 'user' for key 'users.PRIMARY'
+13-02-2023 23:21:55.203  [35m[restartedMain][0;39m [33mAbstractEntityManagerFactoryBean:650[0;39m - Closing JPA EntityManagerFactory for persistence unit 'default'
+13-02-2023 23:21:55.209  [35m[restartedMain][0;39m [33mHikariDataSource:350[0;39m - HikariPool-1 - Shutdown initiated...
+13-02-2023 23:21:55.223  [35m[restartedMain][0;39m [33mHikariDataSource:352[0;39m - HikariPool-1 - Shutdown completed.
+13-02-2023 23:21:55.225  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Stopping service [Tomcat]
+13-02-2023 23:21:55.247  [35m[restartedMain][0;39m [33mConditionEvaluationReportLogger:82[0;39m - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+13-02-2023 23:21:55.292  [35m[restartedMain][0;39m [33mSpringApplication:820[0;39m - Application run failedorg.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through field 'httpSecurity': Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration.httpSecurity' defined in class path resource [org/springframework/security/config/annotation/web/configuration/HttpSecurityConfiguration.class]: Failed to instantiate [org.springframework.security.config.annotation.web.builders.HttpSecurity]: Factory method 'httpSecurity' threw exception with message: Error creating bean with name 'users' defined in class path resource [com/example/demoSecurityWeb/config/WebSecurityConfig.class]: Failed to instantiate [org.springframework.security.provisioning.UserDetailsManager]: Factory method 'users' threw exception with message: PreparedStatementCallback; SQL [insert into users (username, password, enabled) values (?,?,?)]; Duplicate entry 'user' for key 'users.PRIMARY'
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:712)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:692)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:127)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1397)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:915)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.example.demoSecurityWeb.DemoSecurityWebApplication.main(DemoSecurityWebApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration.httpSecurity' defined in class path resource [org/springframework/security/config/annotation/web/configuration/HttpSecurityConfiguration.class]: Failed to instantiate [org.springframework.security.config.annotation.web.builders.HttpSecurity]: Factory method 'httpSecurity' threw exception with message: Error creating bean with name 'users' defined in class path resource [com/example/demoSecurityWeb/config/WebSecurityConfig.class]: Failed to instantiate [org.springframework.security.provisioning.UserDetailsManager]: Factory method 'users' threw exception with message: PreparedStatementCallback; SQL [insert into users (username, password, enabled) values (?,?,?)]; Duplicate entry 'user' for key 'users.PRIMARY'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:491)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:344)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1405)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:709)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.config.annotation.web.builders.HttpSecurity]: Factory method 'httpSecurity' threw exception with message: Error creating bean with name 'users' defined in class path resource [com/example/demoSecurityWeb/config/WebSecurityConfig.class]: Failed to instantiate [org.springframework.security.provisioning.UserDetailsManager]: Factory method 'users' threw exception with message: PreparedStatementCallback; SQL [insert into users (username, password, enabled) values (?,?,?)]; Duplicate entry 'user' for key 'users.PRIMARY'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 36 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'users' defined in class path resource [com/example/demoSecurityWeb/config/WebSecurityConfig.class]: Failed to instantiate [org.springframework.security.provisioning.UserDetailsManager]: Factory method 'users' threw exception with message: PreparedStatementCallback; SQL [insert into users (username, password, enabled) values (?,?,?)]; Duplicate entry 'user' for key 'users.PRIMARY'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1136)
+	at org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer.getBeanOrNull(InitializeUserDetailsBeanManagerConfigurer.java:89)
+	at org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer.configure(InitializeUserDetailsBeanManagerConfigurer.java:62)
+	at org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer.configure(InitializeUserDetailsBeanManagerConfigurer.java:55)
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.configure(AbstractConfiguredSecurityBuilder.java:349)
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.doBuild(AbstractConfiguredSecurityBuilder.java:303)
+	at org.springframework.security.config.annotation.AbstractSecurityBuilder.build(AbstractSecurityBuilder.java:38)
+	at org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration.getAuthenticationManager(AuthenticationConfiguration.java:121)
+	at org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration.authenticationManager(HttpSecurityConfiguration.java:132)
+	at org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration.httpSecurity(HttpSecurityConfiguration.java:108)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139)
+	... 37 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.provisioning.UserDetailsManager]: Factory method 'users' threw exception with message: PreparedStatementCallback; SQL [insert into users (username, password, enabled) values (?,?,?)]; Duplicate entry 'user' for key 'users.PRIMARY'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 61 common frames omitted
+Caused by: org.springframework.dao.DataIntegrityViolationException: PreparedStatementCallback; SQL [insert into users (username, password, enabled) values (?,?,?)]; Duplicate entry 'user' for key 'users.PRIMARY'
+	at org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:95)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1538)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:667)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:960)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1015)
+	at org.springframework.security.provisioning.JdbcUserDetailsManager.createUser(JdbcUserDetailsManager.java:204)
+	at com.example.demoSecurityWeb.config.WebSecurityConfig.users(WebSecurityConfig.java:100)
+	at com.example.demoSecurityWeb.config.WebSecurityConfig$$SpringCGLIB$$0.CGLIB$users$1(<generated>)
+	at com.example.demoSecurityWeb.config.WebSecurityConfig$$SpringCGLIB$$2.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.example.demoSecurityWeb.config.WebSecurityConfig$$SpringCGLIB$$0.users(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139)
+	... 62 common frames omitted
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'user' for key 'users.PRIMARY'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$update$2(JdbcTemplate.java:965)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:651)
+	... 76 common frames omitted
+
+13-02-2023 23:23:20.390  [35m[background-preinit][0;39m [33mVersion:21[0;39m - HV000001: Hibernate Validator 8.0.0.Final
+13-02-2023 23:23:20.515  [35m[restartedMain][0;39m [33mStartupInfoLogger:51[0;39m - Starting DemoSecurityWebApplication using Java 17.0.6 with PID 10676 (C:\Users\Asus\Downloads\demoSecurityWeb\target\classes started by Asus in C:\Users\Asus\Downloads\demoSecurityWeb)
+13-02-2023 23:23:20.517  [35m[restartedMain][0;39m [33mSpringApplication:636[0;39m - The following 1 profile is active: "dev"
+13-02-2023 23:23:20.639  [35m[restartedMain][0;39m [33mDeferredLog:250[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+13-02-2023 23:23:20.640  [35m[restartedMain][0;39m [33mDeferredLog:250[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+13-02-2023 23:23:22.086  [35m[restartedMain][0;39m [33mRepositoryConfigurationDelegate:138[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13-02-2023 23:23:22.181  [35m[restartedMain][0;39m [33mRepositoryConfigurationDelegate:208[0;39m - Finished Spring Data repository scanning in 80 ms. Found 1 JPA repository interfaces.
+13-02-2023 23:23:23.219  [35m[restartedMain][0;39m [33mTomcatWebServer:108[0;39m - Tomcat initialized with port(s): 8080 (http)
+13-02-2023 23:23:23.233  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Initializing ProtocolHandler ["http-nio-8080"]
+13-02-2023 23:23:23.234  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Starting service [Tomcat]
+13-02-2023 23:23:23.235  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.4]
+13-02-2023 23:23:23.341  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Initializing Spring embedded WebApplicationContext
+13-02-2023 23:23:23.342  [35m[restartedMain][0;39m [33mServletWebServerApplicationContext:291[0;39m - Root WebApplicationContext: initialization completed in 2701 ms
+13-02-2023 23:23:23.600  [35m[restartedMain][0;39m [33mLogHelper:31[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+13-02-2023 23:23:23.681  [35m[restartedMain][0;39m [33mVersion:44[0;39m - HHH000412: Hibernate ORM core version 6.1.6.Final
+13-02-2023 23:23:23.975  [35m[restartedMain][0;39m [33mMetadataBuilderImpl$MetadataBuildingOptionsImpl:626[0;39m - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+13-02-2023 23:23:24.178  [35m[restartedMain][0;39m [33mHikariDataSource:110[0;39m - HikariPool-1 - Starting...
+13-02-2023 23:23:24.451  [35m[restartedMain][0;39m [33mHikariPool:565[0;39m - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@709860e1
+13-02-2023 23:23:24.456  [35m[restartedMain][0;39m [33mHikariDataSource:123[0;39m - HikariPool-1 - Start completed.
+13-02-2023 23:23:24.487  [35m[restartedMain][0;39m [33mDialectFactoryImpl:66[0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+13-02-2023 23:23:24.488  [35m[restartedMain][0;39m [33mDialectFactoryImpl:73[0;39m - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+13-02-2023 23:23:26.162  [35m[restartedMain][0;39m [33mJtaPlatformInitiator:51[0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+13-02-2023 23:23:26.180  [35m[restartedMain][0;39m [33mAbstractEntityManagerFactoryBean:437[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+13-02-2023 23:23:26.334  [35m[restartedMain][0;39m [33mAbstractApplicationContext:592[0;39m - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through field 'httpSecurity': Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration.httpSecurity' defined in class path resource [org/springframework/security/config/annotation/web/configuration/HttpSecurityConfiguration.class]: Failed to instantiate [org.springframework.security.config.annotation.web.builders.HttpSecurity]: Factory method 'httpSecurity' threw exception with message: Error creating bean with name 'users' defined in class path resource [com/example/demoSecurityWeb/config/WebSecurityConfig.class]: Failed to instantiate [org.springframework.security.provisioning.UserDetailsManager]: Factory method 'users' threw exception with message: PreparedStatementCallback; SQL [insert into users (username, password, enabled) values (?,?,?)]; Duplicate entry 'user' for key 'users.PRIMARY'
+13-02-2023 23:23:26.335  [35m[restartedMain][0;39m [33mAbstractEntityManagerFactoryBean:650[0;39m - Closing JPA EntityManagerFactory for persistence unit 'default'
+13-02-2023 23:23:26.342  [35m[restartedMain][0;39m [33mHikariDataSource:350[0;39m - HikariPool-1 - Shutdown initiated...
+13-02-2023 23:23:26.356  [35m[restartedMain][0;39m [33mHikariDataSource:352[0;39m - HikariPool-1 - Shutdown completed.
+13-02-2023 23:23:26.358  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Stopping service [Tomcat]
+13-02-2023 23:23:26.386  [35m[restartedMain][0;39m [33mConditionEvaluationReportLogger:82[0;39m - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+13-02-2023 23:23:26.443  [35m[restartedMain][0;39m [33mSpringApplication:820[0;39m - Application run failedorg.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through field 'httpSecurity': Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration.httpSecurity' defined in class path resource [org/springframework/security/config/annotation/web/configuration/HttpSecurityConfiguration.class]: Failed to instantiate [org.springframework.security.config.annotation.web.builders.HttpSecurity]: Factory method 'httpSecurity' threw exception with message: Error creating bean with name 'users' defined in class path resource [com/example/demoSecurityWeb/config/WebSecurityConfig.class]: Failed to instantiate [org.springframework.security.provisioning.UserDetailsManager]: Factory method 'users' threw exception with message: PreparedStatementCallback; SQL [insert into users (username, password, enabled) values (?,?,?)]; Duplicate entry 'user' for key 'users.PRIMARY'
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:712)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:692)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:127)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1397)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:915)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.example.demoSecurityWeb.DemoSecurityWebApplication.main(DemoSecurityWebApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration.httpSecurity' defined in class path resource [org/springframework/security/config/annotation/web/configuration/HttpSecurityConfiguration.class]: Failed to instantiate [org.springframework.security.config.annotation.web.builders.HttpSecurity]: Factory method 'httpSecurity' threw exception with message: Error creating bean with name 'users' defined in class path resource [com/example/demoSecurityWeb/config/WebSecurityConfig.class]: Failed to instantiate [org.springframework.security.provisioning.UserDetailsManager]: Factory method 'users' threw exception with message: PreparedStatementCallback; SQL [insert into users (username, password, enabled) values (?,?,?)]; Duplicate entry 'user' for key 'users.PRIMARY'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:491)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:344)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1405)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:709)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.config.annotation.web.builders.HttpSecurity]: Factory method 'httpSecurity' threw exception with message: Error creating bean with name 'users' defined in class path resource [com/example/demoSecurityWeb/config/WebSecurityConfig.class]: Failed to instantiate [org.springframework.security.provisioning.UserDetailsManager]: Factory method 'users' threw exception with message: PreparedStatementCallback; SQL [insert into users (username, password, enabled) values (?,?,?)]; Duplicate entry 'user' for key 'users.PRIMARY'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 36 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'users' defined in class path resource [com/example/demoSecurityWeb/config/WebSecurityConfig.class]: Failed to instantiate [org.springframework.security.provisioning.UserDetailsManager]: Factory method 'users' threw exception with message: PreparedStatementCallback; SQL [insert into users (username, password, enabled) values (?,?,?)]; Duplicate entry 'user' for key 'users.PRIMARY'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1136)
+	at org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer.getBeanOrNull(InitializeUserDetailsBeanManagerConfigurer.java:89)
+	at org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer.configure(InitializeUserDetailsBeanManagerConfigurer.java:62)
+	at org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer.configure(InitializeUserDetailsBeanManagerConfigurer.java:55)
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.configure(AbstractConfiguredSecurityBuilder.java:349)
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.doBuild(AbstractConfiguredSecurityBuilder.java:303)
+	at org.springframework.security.config.annotation.AbstractSecurityBuilder.build(AbstractSecurityBuilder.java:38)
+	at org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration.getAuthenticationManager(AuthenticationConfiguration.java:121)
+	at org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration.authenticationManager(HttpSecurityConfiguration.java:132)
+	at org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration.httpSecurity(HttpSecurityConfiguration.java:108)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139)
+	... 37 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.provisioning.UserDetailsManager]: Factory method 'users' threw exception with message: PreparedStatementCallback; SQL [insert into users (username, password, enabled) values (?,?,?)]; Duplicate entry 'user' for key 'users.PRIMARY'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 61 common frames omitted
+Caused by: org.springframework.dao.DataIntegrityViolationException: PreparedStatementCallback; SQL [insert into users (username, password, enabled) values (?,?,?)]; Duplicate entry 'user' for key 'users.PRIMARY'
+	at org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:95)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1538)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:667)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:960)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1015)
+	at org.springframework.security.provisioning.JdbcUserDetailsManager.createUser(JdbcUserDetailsManager.java:204)
+	at com.example.demoSecurityWeb.config.WebSecurityConfig.users(WebSecurityConfig.java:100)
+	at com.example.demoSecurityWeb.config.WebSecurityConfig$$SpringCGLIB$$0.CGLIB$users$1(<generated>)
+	at com.example.demoSecurityWeb.config.WebSecurityConfig$$SpringCGLIB$$2.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.example.demoSecurityWeb.config.WebSecurityConfig$$SpringCGLIB$$0.users(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139)
+	... 62 common frames omitted
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'user' for key 'users.PRIMARY'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$update$2(JdbcTemplate.java:965)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:651)
+	... 76 common frames omitted
+
+13-02-2023 23:24:19.783  [35m[background-preinit][0;39m [33mVersion:21[0;39m - HV000001: Hibernate Validator 8.0.0.Final
+13-02-2023 23:24:19.888  [35m[restartedMain][0;39m [33mStartupInfoLogger:51[0;39m - Starting DemoSecurityWebApplication using Java 17.0.6 with PID 11888 (C:\Users\Asus\Downloads\demoSecurityWeb\target\classes started by Asus in C:\Users\Asus\Downloads\demoSecurityWeb)
+13-02-2023 23:24:19.892  [35m[restartedMain][0;39m [33mSpringApplication:636[0;39m - The following 1 profile is active: "dev"
+13-02-2023 23:24:20.051  [35m[restartedMain][0;39m [33mDeferredLog:250[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+13-02-2023 23:24:20.052  [35m[restartedMain][0;39m [33mDeferredLog:250[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+13-02-2023 23:24:21.454  [35m[restartedMain][0;39m [33mRepositoryConfigurationDelegate:138[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13-02-2023 23:24:21.563  [35m[restartedMain][0;39m [33mRepositoryConfigurationDelegate:208[0;39m - Finished Spring Data repository scanning in 94 ms. Found 1 JPA repository interfaces.
+13-02-2023 23:24:22.618  [35m[restartedMain][0;39m [33mTomcatWebServer:108[0;39m - Tomcat initialized with port(s): 8080 (http)
+13-02-2023 23:24:22.632  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Initializing ProtocolHandler ["http-nio-8080"]
+13-02-2023 23:24:22.633  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Starting service [Tomcat]
+13-02-2023 23:24:22.634  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.4]
+13-02-2023 23:24:22.758  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Initializing Spring embedded WebApplicationContext
+13-02-2023 23:24:22.759  [35m[restartedMain][0;39m [33mServletWebServerApplicationContext:291[0;39m - Root WebApplicationContext: initialization completed in 2705 ms
+13-02-2023 23:24:23.021  [35m[restartedMain][0;39m [33mLogHelper:31[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+13-02-2023 23:24:23.114  [35m[restartedMain][0;39m [33mVersion:44[0;39m - HHH000412: Hibernate ORM core version 6.1.6.Final
+13-02-2023 23:24:23.413  [35m[restartedMain][0;39m [33mMetadataBuilderImpl$MetadataBuildingOptionsImpl:626[0;39m - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+13-02-2023 23:24:23.615  [35m[restartedMain][0;39m [33mHikariDataSource:110[0;39m - HikariPool-1 - Starting...
+13-02-2023 23:24:23.896  [35m[restartedMain][0;39m [33mHikariPool:565[0;39m - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@bc40d38
+13-02-2023 23:24:23.900  [35m[restartedMain][0;39m [33mHikariDataSource:123[0;39m - HikariPool-1 - Start completed.
+13-02-2023 23:24:23.937  [35m[restartedMain][0;39m [33mDialectFactoryImpl:66[0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+13-02-2023 23:24:23.939  [35m[restartedMain][0;39m [33mDialectFactoryImpl:73[0;39m - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+13-02-2023 23:24:26.021  [35m[restartedMain][0;39m [33mJtaPlatformInitiator:51[0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+13-02-2023 23:24:26.048  [35m[restartedMain][0;39m [33mAbstractEntityManagerFactoryBean:437[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+13-02-2023 23:24:26.306  [35m[restartedMain][0;39m [33mAbstractApplicationContext:592[0;39m - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through field 'httpSecurity': Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration.httpSecurity' defined in class path resource [org/springframework/security/config/annotation/web/configuration/HttpSecurityConfiguration.class]: Failed to instantiate [org.springframework.security.config.annotation.web.builders.HttpSecurity]: Factory method 'httpSecurity' threw exception with message: Error creating bean with name 'users' defined in class path resource [com/example/demoSecurityWeb/config/WebSecurityConfig.class]: Failed to instantiate [org.springframework.security.provisioning.UserDetailsManager]: Factory method 'users' threw exception with message: PreparedStatementCallback; bad SQL grammar [insert into users (username, password, enabled) values (?,?,?)]
+13-02-2023 23:24:26.307  [35m[restartedMain][0;39m [33mAbstractEntityManagerFactoryBean:650[0;39m - Closing JPA EntityManagerFactory for persistence unit 'default'
+13-02-2023 23:24:26.314  [35m[restartedMain][0;39m [33mHikariDataSource:350[0;39m - HikariPool-1 - Shutdown initiated...
+13-02-2023 23:24:26.331  [35m[restartedMain][0;39m [33mHikariDataSource:352[0;39m - HikariPool-1 - Shutdown completed.
+13-02-2023 23:24:26.334  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Stopping service [Tomcat]
+13-02-2023 23:24:26.361  [35m[restartedMain][0;39m [33mConditionEvaluationReportLogger:82[0;39m - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+13-02-2023 23:24:26.408  [35m[restartedMain][0;39m [33mSpringApplication:820[0;39m - Application run failedorg.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through field 'httpSecurity': Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration.httpSecurity' defined in class path resource [org/springframework/security/config/annotation/web/configuration/HttpSecurityConfiguration.class]: Failed to instantiate [org.springframework.security.config.annotation.web.builders.HttpSecurity]: Factory method 'httpSecurity' threw exception with message: Error creating bean with name 'users' defined in class path resource [com/example/demoSecurityWeb/config/WebSecurityConfig.class]: Failed to instantiate [org.springframework.security.provisioning.UserDetailsManager]: Factory method 'users' threw exception with message: PreparedStatementCallback; bad SQL grammar [insert into users (username, password, enabled) values (?,?,?)]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:712)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:692)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:127)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1397)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:915)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.example.demoSecurityWeb.DemoSecurityWebApplication.main(DemoSecurityWebApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration.httpSecurity' defined in class path resource [org/springframework/security/config/annotation/web/configuration/HttpSecurityConfiguration.class]: Failed to instantiate [org.springframework.security.config.annotation.web.builders.HttpSecurity]: Factory method 'httpSecurity' threw exception with message: Error creating bean with name 'users' defined in class path resource [com/example/demoSecurityWeb/config/WebSecurityConfig.class]: Failed to instantiate [org.springframework.security.provisioning.UserDetailsManager]: Factory method 'users' threw exception with message: PreparedStatementCallback; bad SQL grammar [insert into users (username, password, enabled) values (?,?,?)]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:491)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:344)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1405)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:709)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.config.annotation.web.builders.HttpSecurity]: Factory method 'httpSecurity' threw exception with message: Error creating bean with name 'users' defined in class path resource [com/example/demoSecurityWeb/config/WebSecurityConfig.class]: Failed to instantiate [org.springframework.security.provisioning.UserDetailsManager]: Factory method 'users' threw exception with message: PreparedStatementCallback; bad SQL grammar [insert into users (username, password, enabled) values (?,?,?)]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 36 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'users' defined in class path resource [com/example/demoSecurityWeb/config/WebSecurityConfig.class]: Failed to instantiate [org.springframework.security.provisioning.UserDetailsManager]: Factory method 'users' threw exception with message: PreparedStatementCallback; bad SQL grammar [insert into users (username, password, enabled) values (?,?,?)]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1136)
+	at org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer.getBeanOrNull(InitializeUserDetailsBeanManagerConfigurer.java:89)
+	at org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer.configure(InitializeUserDetailsBeanManagerConfigurer.java:62)
+	at org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer.configure(InitializeUserDetailsBeanManagerConfigurer.java:55)
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.configure(AbstractConfiguredSecurityBuilder.java:349)
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.doBuild(AbstractConfiguredSecurityBuilder.java:303)
+	at org.springframework.security.config.annotation.AbstractSecurityBuilder.build(AbstractSecurityBuilder.java:38)
+	at org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration.getAuthenticationManager(AuthenticationConfiguration.java:121)
+	at org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration.authenticationManager(HttpSecurityConfiguration.java:132)
+	at org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration.httpSecurity(HttpSecurityConfiguration.java:108)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139)
+	... 37 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.provisioning.UserDetailsManager]: Factory method 'users' threw exception with message: PreparedStatementCallback; bad SQL grammar [insert into users (username, password, enabled) values (?,?,?)]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 61 common frames omitted
+Caused by: org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [insert into users (username, password, enabled) values (?,?,?)]
+	at org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:101)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1538)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:667)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:960)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1015)
+	at org.springframework.security.provisioning.JdbcUserDetailsManager.createUser(JdbcUserDetailsManager.java:204)
+	at com.example.demoSecurityWeb.config.WebSecurityConfig.users(WebSecurityConfig.java:100)
+	at com.example.demoSecurityWeb.config.WebSecurityConfig$$SpringCGLIB$$0.CGLIB$users$1(<generated>)
+	at com.example.demoSecurityWeb.config.WebSecurityConfig$$SpringCGLIB$$2.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.example.demoSecurityWeb.config.WebSecurityConfig$$SpringCGLIB$$0.users(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139)
+	... 62 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: Table 'demo_security_web.users' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$update$2(JdbcTemplate.java:965)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:651)
+	... 76 common frames omitted
+
+13-02-2023 23:24:53.061  [35m[background-preinit][0;39m [33mVersion:21[0;39m - HV000001: Hibernate Validator 8.0.0.Final
+13-02-2023 23:24:53.189  [35m[restartedMain][0;39m [33mStartupInfoLogger:51[0;39m - Starting DemoSecurityWebApplication using Java 17.0.6 with PID 13364 (C:\Users\Asus\Downloads\demoSecurityWeb\target\classes started by Asus in C:\Users\Asus\Downloads\demoSecurityWeb)
+13-02-2023 23:24:53.191  [35m[restartedMain][0;39m [33mSpringApplication:636[0;39m - The following 1 profile is active: "dev"
+13-02-2023 23:24:53.375  [35m[restartedMain][0;39m [33mDeferredLog:250[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+13-02-2023 23:24:53.377  [35m[restartedMain][0;39m [33mDeferredLog:250[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+13-02-2023 23:24:54.796  [35m[restartedMain][0;39m [33mRepositoryConfigurationDelegate:138[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13-02-2023 23:24:54.897  [35m[restartedMain][0;39m [33mRepositoryConfigurationDelegate:208[0;39m - Finished Spring Data repository scanning in 88 ms. Found 1 JPA repository interfaces.
+13-02-2023 23:24:56.156  [35m[restartedMain][0;39m [33mTomcatWebServer:108[0;39m - Tomcat initialized with port(s): 8080 (http)
+13-02-2023 23:24:56.171  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Initializing ProtocolHandler ["http-nio-8080"]
+13-02-2023 23:24:56.172  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Starting service [Tomcat]
+13-02-2023 23:24:56.172  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.4]
+13-02-2023 23:24:56.276  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Initializing Spring embedded WebApplicationContext
+13-02-2023 23:24:56.277  [35m[restartedMain][0;39m [33mServletWebServerApplicationContext:291[0;39m - Root WebApplicationContext: initialization completed in 2898 ms
+13-02-2023 23:24:56.538  [35m[restartedMain][0;39m [33mLogHelper:31[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+13-02-2023 23:24:56.630  [35m[restartedMain][0;39m [33mVersion:44[0;39m - HHH000412: Hibernate ORM core version 6.1.6.Final
+13-02-2023 23:24:56.928  [35m[restartedMain][0;39m [33mMetadataBuilderImpl$MetadataBuildingOptionsImpl:626[0;39m - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+13-02-2023 23:24:57.130  [35m[restartedMain][0;39m [33mHikariDataSource:110[0;39m - HikariPool-1 - Starting...
+13-02-2023 23:24:57.401  [35m[restartedMain][0;39m [33mHikariPool:565[0;39m - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2acdbe2a
+13-02-2023 23:24:57.406  [35m[restartedMain][0;39m [33mHikariDataSource:123[0;39m - HikariPool-1 - Start completed.
+13-02-2023 23:24:57.437  [35m[restartedMain][0;39m [33mDialectFactoryImpl:66[0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+13-02-2023 23:24:57.438  [35m[restartedMain][0;39m [33mDialectFactoryImpl:73[0;39m - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+13-02-2023 23:24:59.091  [35m[restartedMain][0;39m [33mJtaPlatformInitiator:51[0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+13-02-2023 23:24:59.109  [35m[restartedMain][0;39m [33mAbstractEntityManagerFactoryBean:437[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+13-02-2023 23:24:59.268  [35m[restartedMain][0;39m [33mAbstractApplicationContext:592[0;39m - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through field 'httpSecurity': Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration.httpSecurity' defined in class path resource [org/springframework/security/config/annotation/web/configuration/HttpSecurityConfiguration.class]: Failed to instantiate [org.springframework.security.config.annotation.web.builders.HttpSecurity]: Factory method 'httpSecurity' threw exception with message: Error creating bean with name 'users' defined in class path resource [com/example/demoSecurityWeb/config/WebSecurityConfig.class]: Failed to instantiate [org.springframework.security.provisioning.UserDetailsManager]: Factory method 'users' threw exception with message: PreparedStatementCallback; bad SQL grammar [insert into users (username, password, enabled) values (?,?,?)]
+13-02-2023 23:24:59.269  [35m[restartedMain][0;39m [33mAbstractEntityManagerFactoryBean:650[0;39m - Closing JPA EntityManagerFactory for persistence unit 'default'
+13-02-2023 23:24:59.275  [35m[restartedMain][0;39m [33mHikariDataSource:350[0;39m - HikariPool-1 - Shutdown initiated...
+13-02-2023 23:24:59.287  [35m[restartedMain][0;39m [33mHikariDataSource:352[0;39m - HikariPool-1 - Shutdown completed.
+13-02-2023 23:24:59.290  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Stopping service [Tomcat]
+13-02-2023 23:24:59.318  [35m[restartedMain][0;39m [33mConditionEvaluationReportLogger:82[0;39m - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+13-02-2023 23:24:59.378  [35m[restartedMain][0;39m [33mSpringApplication:820[0;39m - Application run failedorg.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through field 'httpSecurity': Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration.httpSecurity' defined in class path resource [org/springframework/security/config/annotation/web/configuration/HttpSecurityConfiguration.class]: Failed to instantiate [org.springframework.security.config.annotation.web.builders.HttpSecurity]: Factory method 'httpSecurity' threw exception with message: Error creating bean with name 'users' defined in class path resource [com/example/demoSecurityWeb/config/WebSecurityConfig.class]: Failed to instantiate [org.springframework.security.provisioning.UserDetailsManager]: Factory method 'users' threw exception with message: PreparedStatementCallback; bad SQL grammar [insert into users (username, password, enabled) values (?,?,?)]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:712)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:692)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:127)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1397)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:915)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.example.demoSecurityWeb.DemoSecurityWebApplication.main(DemoSecurityWebApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration.httpSecurity' defined in class path resource [org/springframework/security/config/annotation/web/configuration/HttpSecurityConfiguration.class]: Failed to instantiate [org.springframework.security.config.annotation.web.builders.HttpSecurity]: Factory method 'httpSecurity' threw exception with message: Error creating bean with name 'users' defined in class path resource [com/example/demoSecurityWeb/config/WebSecurityConfig.class]: Failed to instantiate [org.springframework.security.provisioning.UserDetailsManager]: Factory method 'users' threw exception with message: PreparedStatementCallback; bad SQL grammar [insert into users (username, password, enabled) values (?,?,?)]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:491)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:344)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1405)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:709)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.config.annotation.web.builders.HttpSecurity]: Factory method 'httpSecurity' threw exception with message: Error creating bean with name 'users' defined in class path resource [com/example/demoSecurityWeb/config/WebSecurityConfig.class]: Failed to instantiate [org.springframework.security.provisioning.UserDetailsManager]: Factory method 'users' threw exception with message: PreparedStatementCallback; bad SQL grammar [insert into users (username, password, enabled) values (?,?,?)]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 36 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'users' defined in class path resource [com/example/demoSecurityWeb/config/WebSecurityConfig.class]: Failed to instantiate [org.springframework.security.provisioning.UserDetailsManager]: Factory method 'users' threw exception with message: PreparedStatementCallback; bad SQL grammar [insert into users (username, password, enabled) values (?,?,?)]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1136)
+	at org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer.getBeanOrNull(InitializeUserDetailsBeanManagerConfigurer.java:89)
+	at org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer.configure(InitializeUserDetailsBeanManagerConfigurer.java:62)
+	at org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer.configure(InitializeUserDetailsBeanManagerConfigurer.java:55)
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.configure(AbstractConfiguredSecurityBuilder.java:349)
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.doBuild(AbstractConfiguredSecurityBuilder.java:303)
+	at org.springframework.security.config.annotation.AbstractSecurityBuilder.build(AbstractSecurityBuilder.java:38)
+	at org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration.getAuthenticationManager(AuthenticationConfiguration.java:121)
+	at org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration.authenticationManager(HttpSecurityConfiguration.java:132)
+	at org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration.httpSecurity(HttpSecurityConfiguration.java:108)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139)
+	... 37 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.provisioning.UserDetailsManager]: Factory method 'users' threw exception with message: PreparedStatementCallback; bad SQL grammar [insert into users (username, password, enabled) values (?,?,?)]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 61 common frames omitted
+Caused by: org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [insert into users (username, password, enabled) values (?,?,?)]
+	at org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:101)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1538)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:667)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:960)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1015)
+	at org.springframework.security.provisioning.JdbcUserDetailsManager.createUser(JdbcUserDetailsManager.java:204)
+	at com.example.demoSecurityWeb.config.WebSecurityConfig.users(WebSecurityConfig.java:100)
+	at com.example.demoSecurityWeb.config.WebSecurityConfig$$SpringCGLIB$$0.CGLIB$users$1(<generated>)
+	at com.example.demoSecurityWeb.config.WebSecurityConfig$$SpringCGLIB$$2.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.example.demoSecurityWeb.config.WebSecurityConfig$$SpringCGLIB$$0.users(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139)
+	... 62 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: Table 'demo_security_web.users' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$update$2(JdbcTemplate.java:965)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:651)
+	... 76 common frames omitted
+
+13-02-2023 23:26:10.938  [35m[background-preinit][0;39m [33mVersion:21[0;39m - HV000001: Hibernate Validator 8.0.0.Final
+13-02-2023 23:26:11.045  [35m[restartedMain][0;39m [33mStartupInfoLogger:51[0;39m - Starting DemoSecurityWebApplication using Java 17.0.6 with PID 952 (C:\Users\Asus\Downloads\demoSecurityWeb\target\classes started by Asus in C:\Users\Asus\Downloads\demoSecurityWeb)
+13-02-2023 23:26:11.047  [35m[restartedMain][0;39m [33mSpringApplication:636[0;39m - The following 1 profile is active: "dev"
+13-02-2023 23:26:11.176  [35m[restartedMain][0;39m [33mDeferredLog:250[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+13-02-2023 23:26:11.177  [35m[restartedMain][0;39m [33mDeferredLog:250[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+13-02-2023 23:26:12.623  [35m[restartedMain][0;39m [33mRepositoryConfigurationDelegate:138[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13-02-2023 23:26:12.724  [35m[restartedMain][0;39m [33mRepositoryConfigurationDelegate:208[0;39m - Finished Spring Data repository scanning in 87 ms. Found 1 JPA repository interfaces.
+13-02-2023 23:26:13.778  [35m[restartedMain][0;39m [33mTomcatWebServer:108[0;39m - Tomcat initialized with port(s): 8080 (http)
+13-02-2023 23:26:13.794  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Initializing ProtocolHandler ["http-nio-8080"]
+13-02-2023 23:26:13.795  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Starting service [Tomcat]
+13-02-2023 23:26:13.796  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.4]
+13-02-2023 23:26:13.919  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Initializing Spring embedded WebApplicationContext
+13-02-2023 23:26:13.920  [35m[restartedMain][0;39m [33mServletWebServerApplicationContext:291[0;39m - Root WebApplicationContext: initialization completed in 2741 ms
+13-02-2023 23:26:14.170  [35m[restartedMain][0;39m [33mLogHelper:31[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+13-02-2023 23:26:14.253  [35m[restartedMain][0;39m [33mVersion:44[0;39m - HHH000412: Hibernate ORM core version 6.1.6.Final
+13-02-2023 23:26:14.627  [35m[restartedMain][0;39m [33mMetadataBuilderImpl$MetadataBuildingOptionsImpl:626[0;39m - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+13-02-2023 23:26:14.856  [35m[restartedMain][0;39m [33mHikariDataSource:110[0;39m - HikariPool-1 - Starting...
+13-02-2023 23:26:15.126  [35m[restartedMain][0;39m [33mHikariPool:565[0;39m - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@bc40d38
+13-02-2023 23:26:15.130  [35m[restartedMain][0;39m [33mHikariDataSource:123[0;39m - HikariPool-1 - Start completed.
+13-02-2023 23:26:15.161  [35m[restartedMain][0;39m [33mDialectFactoryImpl:66[0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+13-02-2023 23:26:15.162  [35m[restartedMain][0;39m [33mDialectFactoryImpl:73[0;39m - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+13-02-2023 23:26:16.910  [35m[restartedMain][0;39m [33mJtaPlatformInitiator:51[0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+13-02-2023 23:26:16.929  [35m[restartedMain][0;39m [33mAbstractEntityManagerFactoryBean:437[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+13-02-2023 23:26:17.095  [35m[restartedMain][0;39m [33mJdbcUserDetailsManager:169[0;39m - No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+13-02-2023 23:26:17.586  [35m[restartedMain][0;39m [33mDefaultSecurityFilterChain:54[0;39m - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7b66d68b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6305fe3e, org.springframework.security.web.context.SecurityContextHolderFilter@6199ecaf, org.springframework.security.web.header.HeaderWriterFilter@78cfb8c9, org.springframework.security.web.csrf.CsrfFilter@43a2c284, org.springframework.security.web.authentication.logout.LogoutFilter@3bcf4f73, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@21bd3c3c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1ebe9140, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@a865594, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@77ccf057, org.springframework.security.web.access.ExceptionTranslationFilter@44779f98, org.springframework.security.web.access.intercept.AuthorizationFilter@2f7273f4]
+13-02-2023 23:26:18.629  [35m[restartedMain][0;39m [33mOptionalLiveReloadServer:59[0;39m - LiveReload server is running on port 35729
+13-02-2023 23:26:18.683  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Starting ProtocolHandler ["http-nio-8080"]

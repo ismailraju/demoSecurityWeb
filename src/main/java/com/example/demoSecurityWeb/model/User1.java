@@ -6,10 +6,7 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
 import lombok.*;
 
-import org.hibernate.annotations.NotFound;
-import org.hibernate.annotations.NotFoundAction;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.annotation.Transient;
+
 
 import java.util.List;
 
@@ -53,7 +50,7 @@ public class User1 {
     private String confirmationToken;
 
 
-    @NotFound(action = NotFoundAction.IGNORE)
+//    @NotFound(action = NotFoundAction.IGNORE)
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
             name = "user1_to_role1",

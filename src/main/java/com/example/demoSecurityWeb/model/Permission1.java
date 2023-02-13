@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Table(name = "permissions")
+@Table(name = "permission1")
 public class Permission1 {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
