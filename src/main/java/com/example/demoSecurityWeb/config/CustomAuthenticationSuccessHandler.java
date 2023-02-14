@@ -1,6 +1,5 @@
 package com.example.demoSecurityWeb.config;
 
-import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -22,6 +21,8 @@ public class CustomAuthenticationSuccessHandler implements AuthenticationSuccess
 
         Set<String> roles = AuthorityUtils.authorityListToSet(authentication.getAuthorities());
         if (roles.contains("ROLE_USER")) {
+            response.sendRedirect("/demoSecurityWeb/home");
+        } else if (roles.contains("DASHBOARD")) {
             response.sendRedirect("/demoSecurityWeb/home");
         }
 

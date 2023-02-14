@@ -21,7 +21,7 @@ public class Role1 {
     @Column(name = "id")
     private Long id;
 
-    @Column(length = 50, name = "role")
+    @Column(length = 50, name = "role",unique = true)
     private String role;
 
 //    @NotFound(action = NotFoundAction.IGNORE)
