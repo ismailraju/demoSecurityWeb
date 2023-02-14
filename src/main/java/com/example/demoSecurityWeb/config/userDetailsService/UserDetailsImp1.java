@@ -25,7 +25,7 @@ public class UserDetailsImp1 implements UserDetails {
     List<GrantedAuthority> authorities;
 
     public UserDetailsImp1(User1 user) {
-        this.username = user.getEmail();
+        this.username = user.getUsername();
         this.password = user.getPassword();
         this.enabled = user.isEnabled();
         if(user.getRole1s().size()>0){

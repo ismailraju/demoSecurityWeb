@@ -2269,3 +2269,193 @@ Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'r
 14-02-2023 17:37:04.771  [35m[http-nio-8080-exec-1][0;39m [33mDirectJDKLog:173[0;39m - Initializing Spring DispatcherServlet 'dispatcherServlet'
 14-02-2023 17:37:04.772  [35m[http-nio-8080-exec-1][0;39m [33mFrameworkServlet:532[0;39m - Initializing Servlet 'dispatcherServlet'
 14-02-2023 17:37:04.773  [35m[http-nio-8080-exec-1][0;39m [33mFrameworkServlet:554[0;39m - Completed initialization in 1 ms
+14-02-2023 17:40:28.938  [35m[SpringApplicationShutdownHook][0;39m [33mAbstractEntityManagerFactoryBean:650[0;39m - Closing JPA EntityManagerFactory for persistence unit 'default'
+14-02-2023 17:40:28.942  [35m[SpringApplicationShutdownHook][0;39m [33mHikariDataSource:350[0;39m - HikariPool-1 - Shutdown initiated...
+14-02-2023 17:40:28.949  [35m[SpringApplicationShutdownHook][0;39m [33mHikariDataSource:352[0;39m - HikariPool-1 - Shutdown completed.
+14-02-2023 17:40:34.233  [35m[background-preinit][0;39m [33mVersion:21[0;39m - HV000001: Hibernate Validator 8.0.0.Final
+14-02-2023 17:40:34.277  [35m[restartedMain][0;39m [33mStartupInfoLogger:51[0;39m - Starting DemoSecurityWebApplication using Java 17.0.3 with PID 26100 (C:\Users\Raju\Downloads\demoSecurityWeb\target\classes started by Raju in C:\Users\Raju\Downloads\demoSecurityWeb)
+14-02-2023 17:40:34.278  [35m[restartedMain][0;39m [33mSpringApplication:636[0;39m - The following 1 profile is active: "dev"
+14-02-2023 17:40:34.325  [35m[restartedMain][0;39m [33mDeferredLog:250[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+14-02-2023 17:40:34.326  [35m[restartedMain][0;39m [33mDeferredLog:250[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+14-02-2023 17:40:34.943  [35m[restartedMain][0;39m [33mRepositoryConfigurationDelegate:138[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14-02-2023 17:40:35.000  [35m[restartedMain][0;39m [33mRepositoryConfigurationDelegate:208[0;39m - Finished Spring Data repository scanning in 49 ms. Found 3 JPA repository interfaces.
+14-02-2023 17:40:35.559  [35m[restartedMain][0;39m [33mTomcatWebServer:108[0;39m - Tomcat initialized with port(s): 8080 (http)
+14-02-2023 17:40:35.567  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Initializing ProtocolHandler ["http-nio-8080"]
+14-02-2023 17:40:35.568  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Starting service [Tomcat]
+14-02-2023 17:40:35.568  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.5]
+14-02-2023 17:40:35.623  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Initializing Spring embedded WebApplicationContext
+14-02-2023 17:40:35.623  [35m[restartedMain][0;39m [33mServletWebServerApplicationContext:291[0;39m - Root WebApplicationContext: initialization completed in 1297 ms
+14-02-2023 17:40:35.818  [35m[restartedMain][0;39m [33mLogHelper:31[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+14-02-2023 17:40:35.866  [35m[restartedMain][0;39m [33mVersion:44[0;39m - HHH000412: Hibernate ORM core version 6.1.6.Final
+14-02-2023 17:40:36.031  [35m[restartedMain][0;39m [33mMetadataBuilderImpl$MetadataBuildingOptionsImpl:626[0;39m - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+14-02-2023 17:40:36.153  [35m[restartedMain][0;39m [33mHikariDataSource:110[0;39m - HikariPool-1 - Starting...
+14-02-2023 17:40:36.324  [35m[restartedMain][0;39m [33mHikariPool:565[0;39m - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6676f78e
+14-02-2023 17:40:36.326  [35m[restartedMain][0;39m [33mHikariDataSource:123[0;39m - HikariPool-1 - Start completed.
+14-02-2023 17:40:36.344  [35m[restartedMain][0;39m [33mDialectFactoryImpl:66[0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+14-02-2023 17:40:36.344  [35m[restartedMain][0;39m [33mDialectFactoryImpl:73[0;39m - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+14-02-2023 17:40:37.257  [35m[restartedMain][0;39m [33mJtaPlatformInitiator:51[0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14-02-2023 17:40:37.266  [35m[restartedMain][0;39m [33mAbstractEntityManagerFactoryBean:437[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14-02-2023 17:40:37.930  [35m[restartedMain][0;39m [33mDefaultSecurityFilterChain:54[0;39m - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3336a909, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6d92951e, org.springframework.security.web.context.SecurityContextHolderFilter@3739a536, org.springframework.security.web.header.HeaderWriterFilter@7bb84c94, org.springframework.security.web.csrf.CsrfFilter@4d9acfb1, org.springframework.security.web.authentication.logout.LogoutFilter@74fac5d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3b0afddf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3904e65, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@11678227, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@11a6976, org.springframework.security.web.access.ExceptionTranslationFilter@2fe4a26, org.springframework.security.web.access.intercept.AuthorizationFilter@3bc831]
+14-02-2023 17:40:37.949  [35m[restartedMain][0;39m [33mJdbcUserDetailsManager:169[0;39m - No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+14-02-2023 17:40:38.169  [35m[restartedMain][0;39m [33mOptionalLiveReloadServer:59[0;39m - LiveReload server is running on port 35729
+14-02-2023 17:40:38.203  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Starting ProtocolHandler ["http-nio-8080"]
+14-02-2023 17:40:38.225  [35m[restartedMain][0;39m [33mTomcatWebServer:220[0;39m - Tomcat started on port(s): 8080 (http) with context path '/demoSecurityWeb'
+14-02-2023 17:40:38.233  [35m[restartedMain][0;39m [33mStartupInfoLogger:57[0;39m - Started DemoSecurityWebApplication in 4.326 seconds (process running for 5.374)
+14-02-2023 17:41:55.320  [35m[SpringApplicationShutdownHook][0;39m [33mAbstractEntityManagerFactoryBean:650[0;39m - Closing JPA EntityManagerFactory for persistence unit 'default'
+14-02-2023 17:41:55.324  [35m[SpringApplicationShutdownHook][0;39m [33mHikariDataSource:350[0;39m - HikariPool-1 - Shutdown initiated...
+14-02-2023 17:41:55.332  [35m[SpringApplicationShutdownHook][0;39m [33mHikariDataSource:352[0;39m - HikariPool-1 - Shutdown completed.
+14-02-2023 17:41:59.804  [35m[background-preinit][0;39m [33mVersion:21[0;39m - HV000001: Hibernate Validator 8.0.0.Final
+14-02-2023 17:41:59.850  [35m[restartedMain][0;39m [33mStartupInfoLogger:51[0;39m - Starting DemoSecurityWebApplication using Java 17.0.3 with PID 17460 (C:\Users\Raju\Downloads\demoSecurityWeb\target\classes started by Raju in C:\Users\Raju\Downloads\demoSecurityWeb)
+14-02-2023 17:41:59.851  [35m[restartedMain][0;39m [33mSpringApplication:636[0;39m - The following 1 profile is active: "dev"
+14-02-2023 17:41:59.915  [35m[restartedMain][0;39m [33mDeferredLog:250[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+14-02-2023 17:41:59.915  [35m[restartedMain][0;39m [33mDeferredLog:250[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+14-02-2023 17:42:01.607  [35m[restartedMain][0;39m [33mSpringApplication:820[0;39m - Application run failedjava.lang.TypeNotPresentException: Type javax.servlet.http.HttpServletRequest not present
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.repository.ClassRepository.computeSuperInterfaces(ClassRepository.java:117)
+	at java.base/sun.reflect.generics.repository.ClassRepository.getSuperInterfaces(ClassRepository.java:95)
+	at java.base/java.lang.Class.getGenericInterfaces(Class.java:1211)
+	at org.springframework.core.ResolvableType.getInterfaces(ResolvableType.java:500)
+	at org.springframework.core.ResolvableType.as(ResolvableType.java:448)
+	at org.springframework.core.ResolvableType.forClass(ResolvableType.java:1048)
+	at org.springframework.plugin.core.config.PluginRegistriesBeanDefinitionRegistrar.getTargetType(PluginRegistriesBeanDefinitionRegistrar.java:101)
+	at org.springframework.plugin.core.config.PluginRegistriesBeanDefinitionRegistrar.registerBeanDefinitions(PluginRegistriesBeanDefinitionRegistrar.java:71)
+	at org.springframework.context.annotation.ImportBeanDefinitionRegistrar.registerBeanDefinitions(ImportBeanDefinitionRegistrar.java:86)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.lambda$loadBeanDefinitionsFromRegistrars$1(ConfigurationClassBeanDefinitionReader.java:373)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromRegistrars(ConfigurationClassBeanDefinitionReader.java:372)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:148)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:410)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:283)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:344)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:115)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:745)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:565)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.example.demoSecurityWeb.DemoSecurityWebApplication.main(DemoSecurityWebApplication.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.ClassNotFoundException: javax.servlet.http.HttpServletRequest
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	... 37 common frames omitted
+
+14-02-2023 17:46:52.069  [35m[background-preinit][0;39m [33mVersion:21[0;39m - HV000001: Hibernate Validator 8.0.0.Final
+14-02-2023 17:46:52.128  [35m[restartedMain][0;39m [33mStartupInfoLogger:51[0;39m - Starting DemoSecurityWebApplication using Java 17.0.3 with PID 25940 (C:\Users\Raju\Downloads\demoSecurityWeb\target\classes started by Raju in C:\Users\Raju\Downloads\demoSecurityWeb)
+14-02-2023 17:46:52.129  [35m[restartedMain][0;39m [33mSpringApplication:636[0;39m - The following 1 profile is active: "dev"
+14-02-2023 17:46:52.179  [35m[restartedMain][0;39m [33mDeferredLog:250[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+14-02-2023 17:46:52.179  [35m[restartedMain][0;39m [33mDeferredLog:250[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+14-02-2023 17:46:52.782  [35m[restartedMain][0;39m [33mRepositoryConfigurationDelegate:138[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14-02-2023 17:46:52.838  [35m[restartedMain][0;39m [33mRepositoryConfigurationDelegate:208[0;39m - Finished Spring Data repository scanning in 49 ms. Found 3 JPA repository interfaces.
+14-02-2023 17:46:53.372  [35m[restartedMain][0;39m [33mTomcatWebServer:108[0;39m - Tomcat initialized with port(s): 8080 (http)
+14-02-2023 17:46:53.380  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Initializing ProtocolHandler ["http-nio-8080"]
+14-02-2023 17:46:53.380  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Starting service [Tomcat]
+14-02-2023 17:46:53.380  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.5]
+14-02-2023 17:46:53.434  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Initializing Spring embedded WebApplicationContext
+14-02-2023 17:46:53.434  [35m[restartedMain][0;39m [33mServletWebServerApplicationContext:291[0;39m - Root WebApplicationContext: initialization completed in 1254 ms
+14-02-2023 17:46:53.602  [35m[restartedMain][0;39m [33mLogHelper:31[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+14-02-2023 17:46:53.653  [35m[restartedMain][0;39m [33mVersion:44[0;39m - HHH000412: Hibernate ORM core version 6.1.6.Final
+14-02-2023 17:46:53.809  [35m[restartedMain][0;39m [33mMetadataBuilderImpl$MetadataBuildingOptionsImpl:626[0;39m - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+14-02-2023 17:46:53.918  [35m[restartedMain][0;39m [33mHikariDataSource:110[0;39m - HikariPool-1 - Starting...
+14-02-2023 17:46:54.076  [35m[restartedMain][0;39m [33mHikariPool:565[0;39m - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@759ae799
+14-02-2023 17:46:54.078  [35m[restartedMain][0;39m [33mHikariDataSource:123[0;39m - HikariPool-1 - Start completed.
+14-02-2023 17:46:54.095  [35m[restartedMain][0;39m [33mDialectFactoryImpl:66[0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+14-02-2023 17:46:54.096  [35m[restartedMain][0;39m [33mDialectFactoryImpl:73[0;39m - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+14-02-2023 17:46:54.992  [35m[restartedMain][0;39m [33mJtaPlatformInitiator:51[0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14-02-2023 17:46:55.001  [35m[restartedMain][0;39m [33mAbstractEntityManagerFactoryBean:437[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14-02-2023 17:46:55.600  [35m[restartedMain][0;39m [33mDefaultSecurityFilterChain:54[0;39m - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@d03d5f4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7763640a, org.springframework.security.web.context.SecurityContextHolderFilter@43268a52, org.springframework.security.web.header.HeaderWriterFilter@30a138d6, org.springframework.security.web.csrf.CsrfFilter@27ac1a29, org.springframework.security.web.authentication.logout.LogoutFilter@799d56e8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6123823c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@344283c7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@577a5cb2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@aac2ab8, org.springframework.security.web.access.ExceptionTranslationFilter@3fb43430, org.springframework.security.web.access.intercept.AuthorizationFilter@16cd9ae4]
+14-02-2023 17:46:55.617  [35m[restartedMain][0;39m [33mJdbcUserDetailsManager:169[0;39m - No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+14-02-2023 17:46:55.809  [35m[restartedMain][0;39m [33mOptionalLiveReloadServer:59[0;39m - LiveReload server is running on port 35729
+14-02-2023 17:46:55.825  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Starting ProtocolHandler ["http-nio-8080"]
+14-02-2023 17:46:55.843  [35m[restartedMain][0;39m [33mTomcatWebServer:220[0;39m - Tomcat started on port(s): 8080 (http) with context path '/demoSecurityWeb'
+14-02-2023 17:46:55.851  [35m[restartedMain][0;39m [33mStartupInfoLogger:57[0;39m - Started DemoSecurityWebApplication in 4.074 seconds (process running for 4.897)
+14-02-2023 17:47:20.043  [35m[http-nio-8080-exec-2][0;39m [33mDirectJDKLog:173[0;39m - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14-02-2023 17:47:20.044  [35m[http-nio-8080-exec-2][0;39m [33mFrameworkServlet:532[0;39m - Initializing Servlet 'dispatcherServlet'
+14-02-2023 17:47:20.046  [35m[http-nio-8080-exec-2][0;39m [33mFrameworkServlet:554[0;39m - Completed initialization in 1 ms
+14-02-2023 17:48:48.067  [35m[SpringApplicationShutdownHook][0;39m [33mAbstractEntityManagerFactoryBean:650[0;39m - Closing JPA EntityManagerFactory for persistence unit 'default'
+14-02-2023 17:48:48.069  [35m[SpringApplicationShutdownHook][0;39m [33mHikariDataSource:350[0;39m - HikariPool-1 - Shutdown initiated...
+14-02-2023 17:48:48.076  [35m[SpringApplicationShutdownHook][0;39m [33mHikariDataSource:352[0;39m - HikariPool-1 - Shutdown completed.
+14-02-2023 17:48:52.525  [35m[background-preinit][0;39m [33mVersion:21[0;39m - HV000001: Hibernate Validator 8.0.0.Final
+14-02-2023 17:48:52.580  [35m[restartedMain][0;39m [33mStartupInfoLogger:51[0;39m - Starting DemoSecurityWebApplication using Java 17.0.3 with PID 5844 (C:\Users\Raju\Downloads\demoSecurityWeb\target\classes started by Raju in C:\Users\Raju\Downloads\demoSecurityWeb)
+14-02-2023 17:48:52.581  [35m[restartedMain][0;39m [33mSpringApplication:636[0;39m - The following 1 profile is active: "dev"
+14-02-2023 17:48:52.627  [35m[restartedMain][0;39m [33mDeferredLog:250[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+14-02-2023 17:48:52.627  [35m[restartedMain][0;39m [33mDeferredLog:250[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+14-02-2023 17:48:53.265  [35m[restartedMain][0;39m [33mRepositoryConfigurationDelegate:138[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14-02-2023 17:48:53.321  [35m[restartedMain][0;39m [33mRepositoryConfigurationDelegate:208[0;39m - Finished Spring Data repository scanning in 49 ms. Found 3 JPA repository interfaces.
+14-02-2023 17:48:53.856  [35m[restartedMain][0;39m [33mTomcatWebServer:108[0;39m - Tomcat initialized with port(s): 8080 (http)
+14-02-2023 17:48:53.864  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Initializing ProtocolHandler ["http-nio-8080"]
+14-02-2023 17:48:53.865  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Starting service [Tomcat]
+14-02-2023 17:48:53.865  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.5]
+14-02-2023 17:48:53.919  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Initializing Spring embedded WebApplicationContext
+14-02-2023 17:48:53.920  [35m[restartedMain][0;39m [33mServletWebServerApplicationContext:291[0;39m - Root WebApplicationContext: initialization completed in 1292 ms
+14-02-2023 17:48:54.091  [35m[restartedMain][0;39m [33mLogHelper:31[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+14-02-2023 17:48:54.145  [35m[restartedMain][0;39m [33mVersion:44[0;39m - HHH000412: Hibernate ORM core version 6.1.6.Final
+14-02-2023 17:48:54.314  [35m[restartedMain][0;39m [33mMetadataBuilderImpl$MetadataBuildingOptionsImpl:626[0;39m - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+14-02-2023 17:48:54.422  [35m[restartedMain][0;39m [33mHikariDataSource:110[0;39m - HikariPool-1 - Starting...
+14-02-2023 17:48:54.567  [35m[restartedMain][0;39m [33mHikariPool:565[0;39m - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6da3dd72
+14-02-2023 17:48:54.569  [35m[restartedMain][0;39m [33mHikariDataSource:123[0;39m - HikariPool-1 - Start completed.
+14-02-2023 17:48:54.585  [35m[restartedMain][0;39m [33mDialectFactoryImpl:66[0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+14-02-2023 17:48:54.585  [35m[restartedMain][0;39m [33mDialectFactoryImpl:73[0;39m - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+14-02-2023 17:48:55.451  [35m[restartedMain][0;39m [33mJtaPlatformInitiator:51[0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14-02-2023 17:48:55.460  [35m[restartedMain][0;39m [33mAbstractEntityManagerFactoryBean:437[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14-02-2023 17:48:56.054  [35m[restartedMain][0;39m [33mDefaultSecurityFilterChain:54[0;39m - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@20edc3b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@220321ff, org.springframework.security.web.context.SecurityContextHolderFilter@7e8ebf1, org.springframework.security.web.header.HeaderWriterFilter@11a6976, org.springframework.security.web.csrf.CsrfFilter@4921f027, org.springframework.security.web.authentication.logout.LogoutFilter@1e17f782, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1b575cce, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@34043470, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4ceb4957, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@313b85d, org.springframework.security.web.access.ExceptionTranslationFilter@3336a909, org.springframework.security.web.access.intercept.AuthorizationFilter@5bef7855]
+14-02-2023 17:48:56.071  [35m[restartedMain][0;39m [33mJdbcUserDetailsManager:169[0;39m - No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+14-02-2023 17:48:56.257  [35m[restartedMain][0;39m [33mOptionalLiveReloadServer:59[0;39m - LiveReload server is running on port 35729
+14-02-2023 17:48:56.276  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Starting ProtocolHandler ["http-nio-8080"]
+14-02-2023 17:48:56.299  [35m[restartedMain][0;39m [33mTomcatWebServer:220[0;39m - Tomcat started on port(s): 8080 (http) with context path '/demoSecurityWeb'
+14-02-2023 17:48:56.309  [35m[restartedMain][0;39m [33mStartupInfoLogger:57[0;39m - Started DemoSecurityWebApplication in 4.089 seconds (process running for 4.935)
+14-02-2023 17:49:03.792  [35m[http-nio-8080-exec-1][0;39m [33mDirectJDKLog:173[0;39m - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14-02-2023 17:49:03.792  [35m[http-nio-8080-exec-1][0;39m [33mFrameworkServlet:532[0;39m - Initializing Servlet 'dispatcherServlet'
+14-02-2023 17:49:03.793  [35m[http-nio-8080-exec-1][0;39m [33mFrameworkServlet:554[0;39m - Completed initialization in 0 ms
+14-02-2023 17:49:18.699  [35m[SpringApplicationShutdownHook][0;39m [33mAbstractEntityManagerFactoryBean:650[0;39m - Closing JPA EntityManagerFactory for persistence unit 'default'
+14-02-2023 17:49:18.702  [35m[SpringApplicationShutdownHook][0;39m [33mHikariDataSource:350[0;39m - HikariPool-1 - Shutdown initiated...
+14-02-2023 17:49:18.710  [35m[SpringApplicationShutdownHook][0;39m [33mHikariDataSource:352[0;39m - HikariPool-1 - Shutdown completed.
+14-02-2023 17:49:22.654  [35m[background-preinit][0;39m [33mVersion:21[0;39m - HV000001: Hibernate Validator 8.0.0.Final
+14-02-2023 17:49:22.702  [35m[restartedMain][0;39m [33mStartupInfoLogger:51[0;39m - Starting DemoSecurityWebApplication using Java 17.0.3 with PID 3804 (C:\Users\Raju\Downloads\demoSecurityWeb\target\classes started by Raju in C:\Users\Raju\Downloads\demoSecurityWeb)
+14-02-2023 17:49:22.703  [35m[restartedMain][0;39m [33mSpringApplication:636[0;39m - The following 1 profile is active: "dev"
+14-02-2023 17:49:22.752  [35m[restartedMain][0;39m [33mDeferredLog:250[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+14-02-2023 17:49:22.752  [35m[restartedMain][0;39m [33mDeferredLog:250[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+14-02-2023 17:49:23.365  [35m[restartedMain][0;39m [33mRepositoryConfigurationDelegate:138[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14-02-2023 17:49:23.421  [35m[restartedMain][0;39m [33mRepositoryConfigurationDelegate:208[0;39m - Finished Spring Data repository scanning in 49 ms. Found 3 JPA repository interfaces.
+14-02-2023 17:49:23.949  [35m[restartedMain][0;39m [33mTomcatWebServer:108[0;39m - Tomcat initialized with port(s): 8080 (http)
+14-02-2023 17:49:23.956  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Initializing ProtocolHandler ["http-nio-8080"]
+14-02-2023 17:49:23.959  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Starting service [Tomcat]
+14-02-2023 17:49:23.959  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.5]
+14-02-2023 17:49:24.010  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Initializing Spring embedded WebApplicationContext
+14-02-2023 17:49:24.011  [35m[restartedMain][0;39m [33mServletWebServerApplicationContext:291[0;39m - Root WebApplicationContext: initialization completed in 1258 ms
+14-02-2023 17:49:24.177  [35m[restartedMain][0;39m [33mLogHelper:31[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+14-02-2023 17:49:24.226  [35m[restartedMain][0;39m [33mVersion:44[0;39m - HHH000412: Hibernate ORM core version 6.1.6.Final
+14-02-2023 17:49:24.380  [35m[restartedMain][0;39m [33mMetadataBuilderImpl$MetadataBuildingOptionsImpl:626[0;39m - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+14-02-2023 17:49:24.505  [35m[restartedMain][0;39m [33mHikariDataSource:110[0;39m - HikariPool-1 - Starting...
+14-02-2023 17:49:24.649  [35m[restartedMain][0;39m [33mHikariPool:565[0;39m - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@759ae799
+14-02-2023 17:49:24.651  [35m[restartedMain][0;39m [33mHikariDataSource:123[0;39m - HikariPool-1 - Start completed.
+14-02-2023 17:49:24.667  [35m[restartedMain][0;39m [33mDialectFactoryImpl:66[0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+14-02-2023 17:49:24.667  [35m[restartedMain][0;39m [33mDialectFactoryImpl:73[0;39m - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+14-02-2023 17:49:25.554  [35m[restartedMain][0;39m [33mJtaPlatformInitiator:51[0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14-02-2023 17:49:25.564  [35m[restartedMain][0;39m [33mAbstractEntityManagerFactoryBean:437[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14-02-2023 17:49:26.160  [35m[restartedMain][0;39m [33mDefaultSecurityFilterChain:54[0;39m - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@d03d5f4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7763640a, org.springframework.security.web.context.SecurityContextHolderFilter@43268a52, org.springframework.security.web.header.HeaderWriterFilter@30a138d6, org.springframework.security.web.csrf.CsrfFilter@27ac1a29, org.springframework.security.web.authentication.logout.LogoutFilter@799d56e8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6123823c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@344283c7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@577a5cb2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@aac2ab8, org.springframework.security.web.access.ExceptionTranslationFilter@3fb43430, org.springframework.security.web.access.intercept.AuthorizationFilter@16cd9ae4]
+14-02-2023 17:49:26.176  [35m[restartedMain][0;39m [33mJdbcUserDetailsManager:169[0;39m - No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+14-02-2023 17:49:26.358  [35m[restartedMain][0;39m [33mOptionalLiveReloadServer:59[0;39m - LiveReload server is running on port 35729
+14-02-2023 17:49:26.375  [35m[restartedMain][0;39m [33mDirectJDKLog:173[0;39m - Starting ProtocolHandler ["http-nio-8080"]
+14-02-2023 17:49:26.400  [35m[restartedMain][0;39m [33mTomcatWebServer:220[0;39m - Tomcat started on port(s): 8080 (http) with context path '/demoSecurityWeb'
+14-02-2023 17:49:26.410  [35m[restartedMain][0;39m [33mStartupInfoLogger:57[0;39m - Started DemoSecurityWebApplication in 4.041 seconds (process running for 4.845)
+14-02-2023 17:49:35.615  [35m[http-nio-8080-exec-1][0;39m [33mDirectJDKLog:173[0;39m - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14-02-2023 17:49:35.615  [35m[http-nio-8080-exec-1][0;39m [33mFrameworkServlet:532[0;39m - Initializing Servlet 'dispatcherServlet'
+14-02-2023 17:49:35.617  [35m[http-nio-8080-exec-1][0;39m [33mFrameworkServlet:554[0;39m - Completed initialization in 1 ms
