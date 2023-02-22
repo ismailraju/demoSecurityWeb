@@ -27,7 +27,7 @@ public class Role1 {
 //    @NotFound(action = NotFoundAction.IGNORE)
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
-            name = "role1ToPermission1",
+            name = "role1_to_permission1",
             joinColumns = @JoinColumn(name = "role1_id", referencedColumnName = "ID"),
             inverseJoinColumns = @JoinColumn(name = "permission1_id", referencedColumnName = "ID"))
     private List<Permission1> permission1s;

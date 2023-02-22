@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class SwaggerConfigOpenApi {
+public class SwaggerConfigOpenApi  {
 
 
     @Bean
@@ -20,6 +20,8 @@ public class SwaggerConfigOpenApi {
                         .contact(new Contact().name("Ismail Hossain").url("https://www.linkedin.com/in/ismail-hossain-raju-b21945bb/").email("ismailhossainraju74@gmail.com"))
                         .license(new License().name("License").url("/")))
                 .externalDocs(new ExternalDocumentation().description("Spring boot 3.0.2 MVC pp Documentation")
-                        .url("http://localhost:8080/demoSecurityWeb/swagger-ui/index.html"));
+                        .url("http://localhost:8080/swagger-ui/index.html")
+
+                );
     }
 }
