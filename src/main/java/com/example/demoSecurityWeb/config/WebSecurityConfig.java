@@ -1,5 +1,7 @@
 package com.example.demoSecurityWeb.config;
 
+import com.example.demoSecurityWeb.config.jwt.JWTFilter;
+//import com.example.demoSecurityWeb.config.jwt.JWTLoginApiFilter;
 import com.example.demoSecurityWeb.config.userDetailsService.UserDetailsServiceImp1;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -17,6 +19,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.JdbcUserDetailsManager;
 import org.springframework.security.provisioning.UserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 import javax.sql.DataSource;
 
@@ -30,13 +33,15 @@ public class WebSecurityConfig {
 
     @Autowired
     UserDetailsServiceImp1 userDetailsServiceImp1;
+    @Autowired
+    JWTFilter jwtFilter;
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
                 .authorizeHttpRequests((requests) -> requests
                         .requestMatchers(
-                                "/**",
+                                "/",
                                 "/home",
                                 "/css/**",
                                 "/js/**",
@@ -56,6 +61,13 @@ public class WebSecurityConfig {
                 )
 
                 .logout((logout) -> logout.permitAll());
+
+//        http.addFilterBefore(new JWTLoginApiFilter(), UsernamePasswordAuthenticationFilter.class);
+
+        http.addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
+
+        http.authenticationProvider(daoAuthenticationProvider());
+
 
         return http.build();
     }
@@ -126,6 +138,7 @@ public class WebSecurityConfig {
 
     @Bean
     public AuthenticationManager authenticationManager(AuthenticationConfiguration configuration) throws Exception {
+
         return configuration.getAuthenticationManager();
     }
 }

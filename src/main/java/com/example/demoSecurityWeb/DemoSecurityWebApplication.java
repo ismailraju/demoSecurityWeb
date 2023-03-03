@@ -1,19 +1,18 @@
 package com.example.demoSecurityWeb;
 
-import com.example.demoSecurityWeb.model.Permission1;
-import com.example.demoSecurityWeb.model.Role1;
-import com.example.demoSecurityWeb.model.User1;
 import com.example.demoSecurityWeb.repository.Permission1Repository;
 import com.example.demoSecurityWeb.repository.Role1Repository;
 import com.example.demoSecurityWeb.repository.User1Repository;
+import io.swagger.v3.oas.annotations.enums.SecuritySchemeIn;
+import io.swagger.v3.oas.annotations.enums.SecuritySchemeType;
+import io.swagger.v3.oas.annotations.security.SecurityScheme;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.util.Arrays;
-
 @SpringBootApplication
+@SecurityScheme(name = "E-Commerce Application", scheme = "bearer", type = SecuritySchemeType.HTTP, in = SecuritySchemeIn.HEADER)
 public class DemoSecurityWebApplication implements CommandLineRunner {
 
     @Autowired
