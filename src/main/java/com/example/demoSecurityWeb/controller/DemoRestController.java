@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api3")
 @SecurityRequirement(name = "Spring boot 3.0.2 MVC  Application")
 public class DemoRestController {
 
