@@ -24,6 +24,8 @@ public class CustomAuthenticationSuccessHandler implements AuthenticationSuccess
             response.sendRedirect("/home");
         } else if (roles.contains("DASHBOARD")) {
             response.sendRedirect("/home");
+        }else{
+            response.sendRedirect("/home");
         }
 
 
