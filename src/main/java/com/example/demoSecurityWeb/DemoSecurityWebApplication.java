@@ -27,12 +27,17 @@ public class DemoSecurityWebApplication implements CommandLineRunner {
 //    @Qualifier("hi")
     String hello;
 
+    public void hi(){
+        System.out.println("massage!!!");
+    }
     public static void main(String[] args) {
         SpringApplication.run(DemoSecurityWebApplication.class, args);
     }
 
     @Override
     public void run(String... args) throws Exception {
+
+        hi();
 
         System.out.println(hello);
 //        Permission1 permission1 = permission1Repository.save(Permission1.builder().name("DASHBOARD").build());
